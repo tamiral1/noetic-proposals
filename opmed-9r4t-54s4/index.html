@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opmed, After Nurture, Noetic</title>
+<meta name="description" content="Opmed, After Nurture, v1.2, a strategy presentation from Noetic Creative.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --paper: #F7F5F1;
+  --paper-warm: #F1ECE3;
+  --ink: #14131A;
+  --ink-soft: #3A3844;
+  --ink-mute: #7A7787;
+  --ink-faint: #B0ACBC;
+  --purple: #6C5CE7;
+  --purple-deep: #4630B8;
+  --purple-tint: #EEEBFB;
+  --mint: #00A88F;
+  --line: #E1DCEC;
+  --line-strong: #CFC8E3;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Manrope', -apple-system, sans-serif;
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.slide {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: grid;
+  align-content: center;
+  padding: 7vh 9vw;
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+}
+.slide.dark { background: var(--ink); color: rgba(255,255,255,0.86); }
+.slide.warm { background: var(--paper-warm); }
+
+.slide::after {
+  content: attr(data-slide);
+  position: absolute;
+  bottom: 22px; right: 30px;
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+.slide.dark::after { color: rgba(255,255,255,0.35); }
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+.slide.dark h1, .slide.dark h2, .slide.dark h3, .slide.dark h4 { color: white; }
+
+.display-xl { font-size: clamp(42px, 6.8vw, 96px); line-height: 0.98; letter-spacing: -0.03em; font-weight: 500; }
+.display-lg { font-size: clamp(32px, 4.6vw, 62px); font-weight: 500; }
+.display-md { font-size: clamp(25px, 3.2vw, 42px); font-weight: 500; }
+
+.lede { font-size: clamp(16px, 1.25vw, 19px); max-width: 58ch; line-height: 1.6; color: var(--ink-soft); }
+.slide.dark .lede { color: rgba(255,255,255,0.78); }
+
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--purple-deep);
+  margin-bottom: 16px;
+  display: block;
+}
+.slide.dark .label { color: #B9AEF7; }
+
+.fine {
+  font-size: 13.5px;
+  color: var(--ink-mute);
+  line-height: 1.55;
+}
+.slide.dark .fine { color: rgba(255,255,255,0.5); }
+
+code {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  background: var(--purple-tint);
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: var(--purple-deep);
+}
+
+.blob-bg { position: relative; }
+.blob-bg::before, .blob-bg::after { content: ''; position: absolute; border-radius: 50%; filter: blur(95px); pointer-events: none; z-index: 0; }
+.blob-bg::before { width: 42vw; height: 42vw; background: radial-gradient(circle, rgba(0,168,143,0.32) 0%, transparent 70%); bottom: -12%; left: -10%; }
+.blob-bg::after { width: 34vw; height: 34vw; background: radial-gradient(circle, rgba(108,92,231,0.3) 0%, transparent 70%); top: -10%; right: 2%; }
+.blob-bg > * { position: relative; z-index: 1; }
+
+/* split layout, two ideas divided by a rule, not a card grid */
+.split { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 6vw; align-items: start; margin-top: 6vh; }
+.split .rule { background: var(--line-strong); }
+.split-item h4 { font-size: 22px; margin-bottom: 10px; }
+.split-item p { font-size: 15px; line-height: 1.55; }
+.split .tag { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--mint); margin-bottom: 10px; }
+.split .tag.reset { color: var(--ink-mute); }
+
+/* the ladder: four stops of declining weight, a real timeline not a card kit */
+.ladder { margin-top: 6vh; position: relative; }
+.ladder::before { content: ''; position: absolute; top: 11px; left: 0; right: 0; height: 1px; background: var(--line-strong); }
+.ladder-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; position: relative; }
+.stop { position: relative; }
+.stop-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--purple); margin-bottom: 18px; position: relative; z-index: 1; }
+.stop.t2 .stop-dot { background: #9C8EF0; width: 10px; height: 10px; }
+.stop.t3 .stop-dot { background: var(--ink-faint); width: 8px; height: 8px; }
+.stop.t4 .stop-dot { background: transparent; border: 1.5px solid var(--ink-faint); width: 8px; height: 8px; }
+.stop h4 { font-family: 'Fraunces', serif; font-weight: 500; }
+.stop.t1 h4 { font-size: 26px; }
+.stop.t2 h4 { font-size: 22px; color: var(--ink-soft); }
+.stop.t3 h4 { font-size: 19px; color: var(--ink-mute); font-weight: 400; }
+.stop.t4 h4 { font-size: 17px; color: var(--ink-faint); font-weight: 400; }
+.stop p.crit { font-size: 13.5px; color: var(--ink-mute); margin-top: 8px; line-height: 1.45; max-width: 22ch; }
+.stop .next { display: inline-block; margin-top: 14px; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 3px; }
+.stop.t1 .next, .stop.t2 .next { background: var(--purple-tint); color: var(--purple-deep); }
+.stop.t3 .next, .stop.t4 .next { background: transparent; color: var(--ink-mute); border: 1px solid var(--line); }
+
+/* forecast: one hero number, then a plain list, not a grid of stat cards */
+.hero-number { font-family: 'Fraunces', serif; font-weight: 500; font-size: clamp(64px, 9vw, 128px); line-height: 0.9; color: var(--ink); margin: 3vh 0 1vh; }
+.slide.dark .hero-number { color: white; }
+.plain-list { margin-top: 4vh; max-width: 640px; }
+.plain-row { display: grid; grid-template-columns: 1fr auto auto; gap: 24px; padding: 13px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.plain-row:last-child { border-bottom: none; }
+.plain-row .name { font-weight: 600; color: var(--ink); }
+.plain-row .share { color: var(--ink-mute); font-size: 14.5px; }
+.plain-row .count { font-family: 'Fraunces', serif; font-size: 19px; color: var(--ink); }
+.slide.dark .plain-row { border-color: rgba(255,255,255,0.14); }
+.slide.dark .plain-row .name { color: white; }
+.slide.dark .plain-row .share, .slide.dark .plain-row .count { color: rgba(255,255,255,0.75); }
+
+/* spec sheet for the individual emails, a reference table, not decoration */
+.spec { margin-top: 5vh; max-width: 700px; }
+.spec-row { display: grid; grid-template-columns: 140px 1fr; gap: 22px; padding: 14px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.spec-row:last-child { border-bottom: none; }
+.spec-key { font-size: 13.5px; font-weight: 700; color: var(--ink-mute); }
+.spec-val { font-size: 15px; color: var(--ink-soft); }
+.spec-val .subj { display: block; margin-bottom: 3px; }
+
+.cadence { display: flex; gap: 40px; margin: 5vh 0 1vh; flex-wrap: wrap; }
+.cadence-item { max-width: 220px; }
+.cadence-item .day { font-family: 'Fraunces', serif; font-size: 15px; color: var(--purple-deep); font-weight: 500; }
+.cadence-item h4 { font-size: 18px; margin-top: 4px; }
+.cadence-item p { font-size: 13px; color: var(--ink-mute); margin-top: 4px; }
+
+.btn { display: inline-block; justify-self: start; padding: 15px 28px; font-weight: 700; font-size: 15px; background: var(--purple); color: white; border-radius: 999px; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; }
+  .split .rule { display: none; }
+  .ladder-row { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+  .ladder::before { display: none; }
+  .cadence { gap: 24px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 1 COVER -->
+<section class="slide blob-bg" data-slide="1 / 9">
+  <p class="fine">September 2026, v1.2, a strategy presentation from Noetic Creative</p>
+  <h1 class="display-xl" style="margin-top: 18px;">Opmed<br><em>After Nurture</em></h1>
+  <p class="lede" style="margin-top: 26px;">What happens when a nurture flow ends and nobody has booked a demo.</p>
+</section>
+
+<!-- 2 THE GOAL -->
+<section class="slide" data-slide="2 / 9">
+  <span class="label">The goal</span>
+  <h2 class="display-lg">Every contact who leaves Nurture A or B lands somewhere on purpose.</h2>
+  <p class="lede" style="margin-top: 26px;">Right now the flows just stop. Nobody is routed, nobody is measured. This fixes both at once: a rule that sends every exiting contact down one of two paths, and a way to see, quarter over quarter, whether that rule is working.</p>
+</section>
+
+<!-- 3 THE FIX -->
+<section class="slide warm" data-slide="3 / 9">
+  <span class="label">The decision</span>
+  <h2 class="display-lg">Two paths. What they clicked decides which one.</h2>
+  <div class="split">
+    <div class="split-item">
+      <span class="tag">Engaged</span>
+      <h4>Goes to a person</h4>
+      <p>Two clicks across the flow, or a second form submission. A real rep follows up, not another email.</p>
+    </div>
+    <div class="rule"></div>
+    <div class="split-item">
+      <span class="tag reset">Quiet</span>
+      <h4>Goes to a reset</h4>
+      <p>No clicks means the message is not landing. A short, three-email flow asks a different question instead of repeating the same one.</p>
+    </div>
+  </div>
+  <p class="fine" style="margin-top: 5vh;">Opens are not counted here. Only clicks and form submissions, until deliverability supports more.</p>
+</section>
+
+<!-- 4 THE RULE -->
+<section class="slide" data-slide="4 / 9">
+  <span class="label">The rule</span>
+  <h2 class="display-lg">Four stops, ordered by how warm the contact still is.</h2>
+  <div class="ladder">
+    <div class="ladder-row">
+      <div class="stop t1">
+        <div class="stop-dot"></div>
+        <h4>Sales Ready</h4>
+        <p class="crit">Clicked twice across the flow, or submitted a second form.</p>
+        <span class="next">Hand to rep</span>
+      </div>
+      <div class="stop t2">
+        <div class="stop-dot"></div>
+        <h4>Warm</h4>
+        <p class="crit">Exactly one click. Interested, but not asking yet.</p>
+        <span class="next">Rep if there's room</span>
+      </div>
+      <div class="stop t3">
+        <div class="stop-dot"></div>
+        <h4>Passive</h4>
+        <p class="crit">Opened something in the flow, never clicked.</p>
+        <span class="next">Re-engagement</span>
+      </div>
+      <div class="stop t4">
+        <div class="stop-dot"></div>
+        <h4>Dormant</h4>
+        <p class="crit">No engagement recorded anywhere in the sequence.</p>
+        <span class="next">Suppress, quarterly</span>
+      </div>
+    </div>
+  </div>
+  <p class="lede" style="margin-top: 6vh; max-width: 62ch;">Sales Ready and Warm messages carry a rep's name and a real reply-to, so they read like a person is following up, because one is about to. The actual handoff still runs on lead score, the same way it does today. This is not a new process, just a clearer front door to it.</p>
+  <p class="fine" style="margin-top: 3vh;">A hard bounce or unsubscribe ends the sequence immediately, at any stop.</p>
+</section>
+
+<!-- 5 THE FORECAST -->
+<section class="slide dark" data-slide="5 / 9">
+  <span class="label">The forecast</span>
+  <h2 class="display-lg">What a quarter of nurture exits looks like today.</h2>
+  <p class="hero-number">545<span style="font-size: 0.5em; color: var(--ink-faint);"> to 1,150</span></p>
+  <p class="lede">contacts reaching the end of Nurture A or B each quarter, based on current volume.</p>
+  <div class="plain-list">
+    <div class="plain-row"><span class="name">Sales Ready</span><span class="share">2 to 3%</span><span class="count">15 to 30</span></div>
+    <div class="plain-row"><span class="name">Warm</span><span class="share">3 to 4%</span><span class="count">20 to 40</span></div>
+    <div class="plain-row"><span class="name">Passive</span><span class="share">20 to 25%</span><span class="count">110 to 260</span></div>
+    <div class="plain-row"><span class="name">Dormant</span><span class="share">70 to 75%</span><span class="count">400 to 820</span></div>
+  </div>
+  <p class="fine" style="margin-top: 5vh; max-width: 60ch;">Based on 152 contacts entering Nurture A or B in the week of 26 August, with 56% completing Nurture A and per-email click rates of 1 to 3.2%. The range reflects inflow holding steady against inflow halving once the webinar push ends.</p>
+</section>
+
+<!-- 6 RE-ENGAGEMENT, EMAIL 1 -->
+<section class="slide" data-slide="6 / 9">
+  <span class="label">Re-engagement, for Passive contacts</span>
+  <h2 class="display-md">Three short emails. One question, asked once.</h2>
+  <p class="lede" style="margin-top: 20px;">This is not more nurture, it is a timing reset. It starts 30 days after the exit, so the contact gets a real gap first, and it closes with a clean answer either way.</p>
+  <div class="cadence">
+    <div class="cadence-item"><span class="day">Day 30</span><h4>Still the right time?</h4><p>a timing signal</p></div>
+    <div class="cadence-item"><span class="day">Day 60</span><h4>One proof point</h4><p>the strongest asset we have</p></div>
+    <div class="cadence-item"><span class="day">Day 90</span><h4>Permission close</h4><p>a clean yes or no</p></div>
+  </div>
+  <div class="spec">
+    <div class="spec-row"><span class="spec-key">Purpose</span><span class="spec-val">Restart the conversation and learn whether timing was the real problem. Not a sell.</span></div>
+    <div class="spec-row"><span class="spec-key">Content</span><span class="spec-val">Open by naming the specific thing they actually opened, not a generic reminder. If their last touch was the email on OR schedule drift, the line says exactly that, "you looked at how OR schedules drift", pulled from whichever of the four nurture emails they engaged with. Two sentences of context in Eva's voice, then one question with three buttons.</span></div>
+    <div class="spec-row"><span class="spec-key">Subject lines</span><span class="spec-val"><span class="subj">Still the right time?</span><span class="subj">Quick one, <code>{{ first_name }}</code></span><span class="subj">Should we keep you posted?</span></span></div>
+    <div class="spec-row"><span class="spec-key">Tone</span><span class="spec-val">Human and short. No design, no header image. Reads like a note, not a campaign.</span></div>
+    <div class="spec-row"><span class="spec-key">The ask</span><span class="spec-val">Keep me posted, check back in 6 months, or not relevant. The answer becomes the timing data this account is missing.</span></div>
+  </div>
+</section>
+
+<!-- 7 EMAIL 2 -->
+<section class="slide warm" data-slide="7 / 9">
+  <span class="label">Email 2, day 60</span>
+  <h2 class="display-md">One proof point.</h2>
+  <div class="spec">
+    <div class="spec-row"><span class="spec-key">Purpose</span><span class="spec-val">Give one strong reason to look again. A single asset, a single ask.</span></div>
+    <div class="spec-row"><span class="spec-key">Content</span><span class="spec-val">The Geisinger case, our strongest available proof point for this audience. Lead with the outcome number, not the narrative. One link, nothing else competing for attention.</span></div>
+    <div class="spec-row"><span class="spec-key">Subject lines</span><span class="spec-val"><span class="subj">How Geisinger changed the way they schedule</span><span class="subj">Fewer overruns. Here is how.</span><span class="subj">One hospital, one change, one number</span></span></div>
+    <div class="spec-row"><span class="spec-key">Tone</span><span class="spec-val">Evidence led, no adjectives. The number carries it.</span></div>
+    <div class="spec-row"><span class="spec-key">The ask</span><span class="spec-val">Read the case. No demo ask yet.</span></div>
+  </div>
+</section>
+
+<!-- 8 EMAIL 3 -->
+<section class="slide" data-slide="8 / 9">
+  <span class="label">Email 3, day 90</span>
+  <h2 class="display-md">Permission close.</h2>
+  <div class="spec">
+    <div class="spec-row"><span class="spec-key">Purpose</span><span class="spec-val">Force a clean decision and protect the sending domain. A no is worth more than silence, and it frees up marketing contact room.</span></div>
+    <div class="spec-row"><span class="spec-key">Content</span><span class="spec-val">Three sentences. We have not heard back. We will stop emailing, unless they would rather hear from us quarterly instead.</span></div>
+    <div class="spec-row"><span class="spec-key">Subject lines</span><span class="spec-val"><span class="subj">Should we stop?</span><span class="subj">Last one from us</span><span class="subj">Closing the loop</span></span></div>
+    <div class="spec-row"><span class="spec-key">Tone</span><span class="spec-val">Direct and unbothered. No guilt, no false urgency.</span></div>
+    <div class="spec-row"><span class="spec-key">The ask</span><span class="spec-val">Stay on the quarterly list. Anyone who does not answer is suppressed automatically.</span></div>
+  </div>
+</section>
+
+<!-- 9 HANDOFF, WHAT NEEDS TO LINE UP, MEASURE -->
+<section class="slide dark" data-slide="9 / 9">
+  <span class="label">Handoff, and how we will measure it</span>
+  <h2 class="display-lg">A click creates a task, and a rep has a clock on it.</h2>
+  <p class="lede" style="margin-top: 20px;">When a Sales Ready contact clicks, HubSpot notifies the account and opens a task in Salesforce, so the moment is not lost. A rep responds inside 24 business hours; if nothing has moved after three days, the contact drops into Warm treatment automatically.</p>
+
+  <div class="plain-list" style="margin-top: 5vh;">
+    <div class="plain-row"><span class="name">Turn on Salesforce Activity Sync</span><span class="share">a toggle in the existing integration, no new cost</span><span class="count"></span></div>
+    <div class="plain-row"><span class="name">Get hard bounce under 1%</span><span class="share">currently 2.6%, before any send goes out</span><span class="count"></span></div>
+    <div class="plain-row"><span class="name">Confirm tracking on the form pages</span><span class="share">so a page visit becomes a usable signal</span><span class="count"></span></div>
+  </div>
+
+  <p class="lede" style="margin-top: 6vh;">Two things we watch from here: the share of Sales Ready contacts a rep reaches inside that 24-hour window, and the rate at which they turn into a booked meeting, tracked for visibility, not held as a Noetic number, since what happens after handoff depends on the rep, not the email.</p>
+
+  <a class="btn" href="https://noetic.io" style="margin-top: 5vh; display: inline-block;">Approve this plan</a>
+</section>
+
+</body>
+</html>
