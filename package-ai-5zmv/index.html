@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Package.AI &times; Noetic &middot; You taught the last mile to talk. Now the brand has to.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script defer data-domain="proposals.noetic.io" src="https://plausible.io/js/script.js"></script>
+<style>
+:root{--paper:#FAFAF7;--paper-warm:#F2F0EA;--paper-cool:#F0F0F4;--ink:#0A0A0E;--ink-soft:#1A1A1F;--ink-mute:#6B6B7B;--ink-faint:#A8A8B5;--card:#FFFFFF;--purple:#6C5CE7;--purple-deep:#4D3FC9;--purple-soft:#EFEDFE;--purple-glow:rgba(108,92,231,0.18);--mint:#00D4B4;--coral:#FF6B6B;--amber:#F5B400;--rule:rgba(10,10,14,0.08);--rule-strong:rgba(10,10,14,0.16);--max:1240px;--max-narrow:920px;--font-display:'Fraunces','Times New Roman',serif;--font-sans:'Manrope',-apple-system,BlinkMacSystemFont,sans-serif;--font-mono:'JetBrains Mono',monospace}
+::selection{background:var(--purple);color:white}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{background:var(--paper);color:var(--ink-soft);overflow-x:hidden;font-family:var(--font-sans);font-size:17px;line-height:1.55;letter-spacing:-0.005em}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 32px}
+.container-narrow{width:100%;max-width:var(--max-narrow);margin:0 auto;padding:0 32px}
+section{position:relative}
+.section{padding:clamp(80px,12vh,160px) 0}
+.section-head{margin-bottom:clamp(48px,6vw,80px)}
+.section-head .display-md{margin-top:18px;max-width:22ch}
+.display-xl{font-family:var(--font-display);font-size:clamp(56px,9vw,132px);font-weight:600;line-height:0.95;letter-spacing:-0.035em}
+.display-lg{font-family:var(--font-display);font-size:clamp(44px,6vw,88px);font-weight:600;line-height:1;letter-spacing:-0.03em}
+.display-md{font-family:var(--font-display);font-size:clamp(34px,4.5vw,60px);font-weight:600;line-height:1.05;letter-spacing:-0.025em}
+h1,h2,h3,h4{color:var(--ink);letter-spacing:-0.022em;line-height:1.05;font-weight:700}
+.italic{font-style:italic;font-weight:400}
+.lede{font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:var(--ink-soft);font-weight:400;max-width:60ch}
+.prose p{color:var(--ink-soft);font-size:clamp(17px,1.35vw,19px);line-height:1.6;max-width:62ch;margin-bottom:20px}
+.prose p strong{color:var(--ink);font-weight:700}
+.prose-pull{margin:36px 0;padding:22px 0 22px 28px;border-left:3px solid var(--purple);font-family:var(--font-display);font-size:clamp(22px,2.2vw,30px);line-height:1.3;color:var(--ink);font-weight:500;letter-spacing:-0.015em;max-width:30ch}
+.eyebrow{font-family:var(--font-mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink-mute);display:inline-flex;align-items:center;gap:8px}
+.eyebrow::before{content:"";width:6px;height:6px;background:var(--purple);border-radius:50%}
+.eyebrow.dark{color:rgba(255,255,255,0.6)}
+.eyebrow.dark::before{background:var(--mint)}
+.client-bar{background:var(--ink);padding:11px 32px;display:flex;align-items:center;justify-content:space-between}
+.client-bar-logos{display:flex;align-items:center;gap:18px}
+.client-bar-divider{width:1px;height:22px;background:rgba(255,255,255,0.2)}
+.client-bar-meta{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:rgba(255,255,255,0.4)}
+@media (max-width:600px){.client-bar-meta{display:none}}
+.nav{position:sticky;top:0;left:0;right:0;z-index:100;padding:14px 32px;background:rgba(250,250,247,0.85);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);border-bottom:1px solid transparent;transition:border-color 0.3s ease}
+.nav.scrolled{border-bottom-color:var(--rule)}
+.nav-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink-mute);transition:color 0.2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--ink);color:white !important;padding:10px 18px;border-radius:999px;font-size:13px !important;font-weight:600 !important;display:inline-flex;align-items:center;gap:8px;transition:background 0.2s}
+.nav-cta:hover{background:var(--purple) !important}
+@media (max-width:820px){.nav-links li:not(:last-child){display:none}}
+.hero{padding-top:clamp(110px,15vh,190px);padding-bottom:clamp(80px,12vh,140px);position:relative;overflow:hidden}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(10,10,14,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(10,10,14,0.04) 1px,transparent 1px);background-size:80px 80px;background-position:-1px -1px;mask-image:radial-gradient(ellipse 80% 60% at 50% 40%,black,transparent);-webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 40%,black,transparent);pointer-events:none}
+.hero-blob{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(108,92,231,0.22),transparent 60%);filter:blur(80px);pointer-events:none;top:-200px;right:-200px;z-index:0}
+.hero-blob-2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle at 70% 70%,rgba(0,212,180,0.15),transparent 60%);filter:blur(80px);pointer-events:none;bottom:-150px;left:-100px;z-index:0}
+.hero-inner{position:relative;z-index:1}
+.hero-meta{display:flex;gap:18px;align-items:center;margin-bottom:28px;font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:var(--ink-mute);flex-wrap:wrap}
+.hero-meta-divider{width:24px;height:1px;background:var(--rule-strong)}
+.hero h1{margin-bottom:28px;max-width:12ch}
+.hero h1 .accent-line{display:block;color:var(--purple);font-style:italic;font-weight:400}
+.hero-lede{font-size:clamp(19px,1.8vw,24px);line-height:1.45;color:var(--ink-soft);max-width:56ch;margin-top:8px;font-weight:400}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:clamp(60px,8vh,100px);border-top:1px solid var(--rule)}
+.hero-stat{padding:32px 24px 0 0;border-right:1px solid var(--rule)}
+.hero-stat:not(:first-child){padding-left:24px}
+.hero-stat:last-child{border-right:none;padding-right:0}
+.hero-stat-num{font-family:var(--font-display);font-size:clamp(40px,5vw,64px);font-weight:600;line-height:1;letter-spacing:-0.03em;color:var(--ink);margin-bottom:8px}
+.hero-stat-num .small{font-size:0.55em;vertical-align:super}
+.hero-stat-num .accent{color:var(--purple)}
+.hero-stat-label{font-size:13px;color:var(--ink-mute);font-weight:500;line-height:1.4;max-width:22ch}
+@media (max-width:800px){.hero-stats{grid-template-columns:repeat(2,1fr)}
+.hero-stat:nth-child(2n){border-right:none}
+.hero-stat{padding:24px 16px 0 0;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+.hero-stat:not(:first-child){padding-left:0}
+.hero-stat:last-child,.hero-stat:nth-last-child(2){border-bottom:none}
+}
+.belief-list{list-style:none;display:flex;flex-direction:column}
+.belief-item{padding:28px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:50px 1fr;gap:24px;align-items:start}
+.belief-item:last-child{border-bottom:1px solid var(--rule)}
+.belief-num{font-family:var(--font-mono);font-size:12px;color:var(--ink-mute);font-weight:500;letter-spacing:0.05em;padding-top:6px}
+.belief-content h3{font-family:var(--font-display);font-size:clamp(22px,2.2vw,30px);font-weight:600;margin-bottom:8px;letter-spacing:-0.02em}
+.belief-content p{color:var(--ink-mute);font-size:16px;line-height:1.55;max-width:58ch}
+.neon{border:1px solid rgba(108,92,231,0.75);box-shadow:0 0 0 1px rgba(108,92,231,0.18),0 0 28px rgba(108,92,231,0.28),inset 0 0 24px rgba(108,92,231,0.06)}
+.sow-grid{display:grid;grid-template-columns:340px 1fr;gap:clamp(36px,5vw,72px);align-items:start;margin-top:56px}
+@media (max-width:960px){.sow-grid{grid-template-columns:1fr}}
+.sow-card{position:sticky;top:96px;background:var(--ink);color:white;border-radius:16px;padding:34px 30px}
+.sow-card .tag{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--mint);margin-bottom:14px}
+.sow-card .name{font-family:var(--font-display);font-size:30px;font-weight:600;letter-spacing:-0.02em;line-height:1.05;margin-bottom:10px}
+.sow-card .tagline{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.5;margin-bottom:22px}
+.sow-card .price{font-family:var(--font-display);font-size:52px;font-weight:600;letter-spacing:-0.03em;line-height:1;margin-bottom:4px}
+.sow-card .price-meta{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.5);margin-bottom:22px}
+.sow-meta-row{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:10px 0;border-top:1px solid rgba(255,255,255,0.12);font-size:13px;color:rgba(255,255,255,0.65)}
+.sow-meta-row strong{color:white;font-weight:600;text-align:right}
+.sow-card.purple{background:var(--purple)}
+.sow-card.purple .tag{color:white;opacity:0.85}
+.deliv-group{margin-bottom:40px}
+.deliv-group-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.18em;color:var(--purple-deep);margin-bottom:8px;padding-bottom:12px;border-bottom:1px solid var(--rule-strong)}
+.deliv{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:start}
+.deliv-num{font-family:var(--font-display);font-size:30px;font-weight:600;line-height:1;letter-spacing:-0.03em;color:var(--purple);padding-top:2px}
+.deliv h4{font-family:var(--font-display);font-size:clamp(20px,2vw,26px);font-weight:600;letter-spacing:-0.02em;margin-bottom:8px;line-height:1.15}
+.deliv p{font-size:15px;color:var(--ink-soft);line-height:1.6;max-width:62ch}
+.deliv ul{list-style:none;margin-top:12px}
+.deliv ul li{font-size:14.5px;color:var(--ink-soft);line-height:1.55;padding:6px 0 6px 20px;position:relative;max-width:62ch}
+.deliv ul li::before{content:"→";position:absolute;left:0;color:var(--purple);font-weight:600;font-size:13px}
+.deliv .aside{margin-top:12px;padding:12px 16px;background:var(--purple-soft);border-radius:8px;font-size:13.5px;color:var(--purple-deep);line-height:1.5;max-width:62ch}
+.not-included{margin-top:28px;padding:22px 26px;border-radius:12px;background:var(--paper-warm);border:1px solid var(--rule);font-size:14px;color:var(--ink-mute);line-height:1.6}
+.not-included strong{display:block;font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--ink);margin-bottom:8px;font-weight:500}
+.cmp{margin-top:56px;border:1px solid var(--rule-strong);border-radius:16px;overflow:hidden;background:white}
+.cmp-row{display:grid;grid-template-columns:1.3fr 1fr 1fr}
+.cmp-row>div{padding:18px 22px;border-bottom:1px solid var(--rule);font-size:15px;line-height:1.5;color:var(--ink-soft)}
+.cmp-row>div:not(:first-child){border-left:1px solid var(--rule)}
+.cmp-row:last-child>div{border-bottom:none}
+.cmp-row.head>div{background:var(--ink);color:white;border-bottom:none;padding:22px}
+.cmp-row.head .t{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--mint);margin-bottom:8px}
+.cmp-row.head .n{font-family:var(--font-display);font-size:22px;font-weight:600;letter-spacing:-0.02em}
+.cmp-row.head .p{font-family:var(--font-mono);font-size:12px;color:rgba(255,255,255,0.6);margin-top:6px}
+.cmp-row.head>div.hl{background:var(--purple)}
+.cmp-row.head>div.hl .t{color:white;opacity:0.85}
+.cmp-row.head>div.hl .p{color:rgba(255,255,255,0.8)}
+.cmp-row .lab{font-weight:600;color:var(--ink);background:var(--paper);font-size:14px}
+.cmp-row .lab small{display:block;font-weight:400;color:var(--ink-mute);font-size:12.5px;margin-top:2px}
+.cmp-row .yes::before{content:"●";color:var(--purple);margin-right:8px;font-size:10px;vertical-align:2px}
+.cmp-row .part::before{content:"◐";color:var(--amber);margin-right:8px;font-size:11px}
+.cmp-row .no{color:var(--ink-faint)}
+.cmp-row .no::before{content:"○";margin-right:8px;font-size:10px}
+@media (max-width:760px){.cmp-row{grid-template-columns:1fr}
+.cmp-row>div:not(:first-child){border-left:none}
+.cmp-row.head{display:none}
+}
+.roadmap{margin-top:56px;border-top:1px solid var(--rule)}
+.road-row{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:start}
+@media (max-width:700px){.road-row{grid-template-columns:1fr;gap:8px}}
+.road-when{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:var(--purple-deep);padding-top:4px}
+.road-when b{display:block;font-family:var(--font-display);font-size:24px;font-weight:600;letter-spacing:-0.02em;color:var(--ink);text-transform:none;margin-top:4px}
+.road-what{font-size:15px;color:var(--ink-soft);line-height:1.6;max-width:70ch}
+.road-what .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chip{font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.06em;padding:5px 10px;border-radius:999px;border:1px solid var(--rule-strong);color:var(--ink-mute);background:white}
+.chip.sow{border-color:rgba(108,92,231,0.6);color:var(--purple-deep)}
+.chip.ret{border-color:rgba(0,168,138,0.6);color:#006B5C}
+.pricing-card{background:white;border-radius:16px;padding:38px 36px;position:relative;display:flex;flex-direction:column}
+.pricing-tag{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--purple-deep);margin-bottom:14px}
+.pricing-name{font-family:var(--font-display);font-size:clamp(28px,2.6vw,36px);font-weight:600;letter-spacing:-0.02em;line-height:1.05;margin-bottom:10px;color:var(--ink)}
+.pricing-tagline{font-size:15px;color:var(--ink-mute);line-height:1.5;margin-bottom:26px;max-width:40ch}
+.pricing-price{font-family:var(--font-display);font-size:clamp(48px,5vw,68px);font-weight:600;letter-spacing:-0.035em;line-height:1;color:var(--ink)}
+.pricing-price span{font-family:var(--font-sans);font-size:18px;font-weight:500;letter-spacing:-0.01em;color:var(--ink-mute)}
+.pricing-meta{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:var(--ink-mute);margin:12px 0 26px}
+.pricing-features{list-style:none;border-top:1px solid var(--rule);flex:1}
+.pricing-features li{padding:11px 0 11px 22px;border-bottom:1px solid var(--rule);font-size:14.5px;color:var(--ink-soft);position:relative;line-height:1.45}
+.pricing-features li::before{content:"→";position:absolute;left:0;color:var(--purple);font-weight:700;font-size:13px}
+.pricing-best{margin-top:22px;padding:14px 16px;border-radius:10px;background:var(--purple-soft);font-size:13.5px;color:var(--purple-deep);line-height:1.5}
+.pricing-best b{font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;display:block;margin-bottom:4px;font-weight:500}
+.featured-section{background:var(--ink);color:white}
+.featured-section h2,.featured-section h3{color:white}
+.featured-cs{border-top:1px solid rgba(255,255,255,0.1);padding:56px 0}
+.featured-cs:last-of-type{border-bottom:1px solid rgba(255,255,255,0.1)}
+.featured-cs-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+@media (max-width:900px){.featured-cs-grid{grid-template-columns:1fr;gap:28px}}
+.featured-cs-meta-tag{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.15em;color:var(--mint);margin-bottom:20px}
+.featured-cs-meta h3{font-family:var(--font-display);font-size:clamp(36px,4.5vw,56px);font-weight:600;letter-spacing:-0.025em;line-height:1;margin-bottom:16px}
+.featured-cs-meta p{color:rgba(255,255,255,0.65);font-size:15px;line-height:1.55;max-width:38ch;margin-bottom:24px}
+.featured-cs-channels{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.channel-chip{font-family:var(--font-mono);font-size:11px;letter-spacing:0.04em;padding:6px 12px;border:1px solid rgba(255,255,255,0.18);border-radius:999px;color:rgba(255,255,255,0.85)}
+.featured-cs-narrative{display:flex;flex-direction:column;gap:24px}
+.featured-cs-narrative h4{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.18em;color:var(--purple);font-weight:500;margin-bottom:10px}
+.featured-cs-narrative p{font-size:16.5px;line-height:1.55;color:rgba(255,255,255,0.85);max-width:60ch}
+.featured-results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-top:8px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.12)}
+.featured-result{padding:0 24px 0 0;border-right:1px solid rgba(255,255,255,0.1)}
+.featured-result:last-child{border-right:none}
+.featured-result-num{font-family:var(--font-display);font-size:clamp(34px,4.2vw,52px);font-weight:600;letter-spacing:-0.03em;line-height:1;color:var(--mint);margin-bottom:8px}
+.featured-result-num.purple{color:#B8AEFF}
+.featured-result-label{font-size:12px;color:rgba(255,255,255,0.55);font-weight:500;line-height:1.4;max-width:22ch}
+.aha-dark{margin-top:4px;padding:18px 22px;border-radius:12px;font-family:var(--font-display);font-style:italic;font-size:17px;color:white;line-height:1.4}
+.aha-dark::before{content:"Aha! moment";font-style:normal;font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--mint);font-weight:600;display:block;margin-bottom:8px}
+.companion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+@media (max-width:900px){.companion-grid{grid-template-columns:1fr}}
+.companion{border-radius:14px;padding:28px 26px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1)}
+.companion .tag{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:var(--mint);margin-bottom:12px}
+.companion p{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.55;margin-bottom:18px}
+.companion .nums{display:flex;gap:14px;flex-wrap:wrap;padding-top:16px;border-top:1px solid rgba(255,255,255,0.1)}
+.companion .nums div b{font-family:var(--font-display);font-size:26px;font-weight:600;color:#B8AEFF;letter-spacing:-0.02em;display:block;line-height:1;margin-bottom:4px}
+.companion .nums div span{font-size:11px;color:rgba(255,255,255,0.5)}
+.companion .fcs-link{margin-top:18px}
+.team-avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-display);font-weight:600;font-size:15px;color:white;letter-spacing:-0.02em;flex-shrink:0;overflow:hidden}
+.team-avatar img{width:100%;height:100%;object-fit:cover}
+.team-info h5{font-size:14.5px;font-weight:700;margin-bottom:2px;color:var(--ink);letter-spacing:-0.01em;line-height:1.2}
+.team-info .role{font-family:var(--font-mono);font-size:9.5px;text-transform:uppercase;color:var(--ink-mute);letter-spacing:0.08em;line-height:1.4}
+.av-1{background:linear-gradient(135deg,#6C5CE7,#4D3FC9)}
+.av-2{background:linear-gradient(135deg,#00D4B4,#008C75)}
+.av-3{background:linear-gradient(135deg,#FF6B6B,#C73E3E)}
+.av-4{background:linear-gradient(135deg,#F5B400,#C68C00)}
+.av-5{background:linear-gradient(135deg,#2C2C40,#0A0A0E)}
+.av-6{background:linear-gradient(135deg,#9B7BFF,#6C5CE7)}
+.av-7{background:linear-gradient(135deg,#5DDFC4,#00D4B4)}
+.av-8{background:linear-gradient(135deg,#FF9966,#FF6B6B)}
+.av-9{background:linear-gradient(135deg,#4D3FC9,#1A1A40)}
+.av-10{background:linear-gradient(135deg,#00B894,#00684A)}
+.team-note{margin-top:24px;font-size:14px;color:var(--ink-mute);max-width:70ch}
+.clients{background:var(--paper-warm)}
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:56px;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+@media (max-width:480px){.clients-grid{grid-template-columns:repeat(2,1fr)}}
+.client-cell{background:var(--paper-warm);border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:grid;place-items:center;text-align:center;transition:background 0.3s;cursor:default;min-height:150px;padding:24px}
+.client-cell img{width:80%;max-width:80%;max-height:90px;height:auto;object-fit:contain;filter:grayscale(1);opacity:0.7;transition:filter 0.3s,opacity 0.3s}
+.client-cell:hover{background:white}
+.client-cell:hover img{filter:none;opacity:1}
+.client-cell.keter img{width:16%;max-width:16%}
+.client-cell.caes img{width:auto;max-width:27%;max-height:20px}
+.cta-section{background:var(--ink);color:white;padding:clamp(100px,14vh,180px) 0 clamp(60px,9vh,100px);position:relative;overflow:hidden}
+.cta-section::before{content:"";position:absolute;bottom:-20%;left:-10%;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(108,92,231,0.32),transparent 70%);filter:blur(100px)}
+.cta-section .container{position:relative;z-index:1}
+.cta-eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.18em;color:var(--mint);margin-bottom:28px}
+.cta-title{font-family:var(--font-display);font-size:clamp(48px,7vw,100px);font-weight:600;line-height:0.98;letter-spacing:-0.03em;color:white;margin-bottom:36px;max-width:14ch}
+.cta-title .italic{color:var(--purple);font-style:italic;font-weight:500}
+.cta-lede{font-size:18px;line-height:1.55;color:rgba(255,255,255,0.7);max-width:52ch;margin-bottom:40px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:60px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-size:15px;font-weight:600;letter-spacing:-0.01em;transition:all 0.2s;border:1px solid transparent}
+.btn-primary{background:var(--purple);color:white}
+.btn-primary:hover{background:white;color:var(--ink)}
+.btn-ghost{background:transparent;color:white;border-color:rgba(255,255,255,0.2)}
+.btn-ghost:hover{border-color:white}
+.btn svg{width:16px;height:16px}
+.footer-meta{margin-top:80px;padding-top:36px;border-top:1px solid rgba(255,255,255,0.12);display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:24px}
+.footer-meta-block{font-family:var(--font-mono);font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.1em;line-height:1.7}
+.footer-meta-block span{display:block;color:white;font-size:13px;text-transform:none;letter-spacing:-0.01em;margin-top:6px;font-family:var(--font-sans);font-weight:500}
+.working-model{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.1)}
+@media (max-width:900px){.working-model{grid-template-columns:repeat(2,1fr)}}
+.wm-cell{background:var(--ink);padding:22px 22px}
+.wm-cell .l{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:rgba(255,255,255,0.5);margin-bottom:8px}
+.wm-cell .v{font-size:14px;color:white;line-height:1.5}
+@media print{.nav,.client-bar{display:none}
+body{background:white}
+.hero-blob,.hero-blob-2,.cta-section::before{display:none}
+.featured-cs,.pricing-card,.deliv{break-inside:avoid}
+.sow-card{position:static}
+}
+.nav-brand{gap:14px}
+.nav-brand-divider{width:1px;height:22px;background:var(--rule-strong)}
+.services-dark{background:var(--ink);color:white;position:relative;overflow:hidden}
+.services-dark::before{content:"";position:absolute;top:-30%;right:-15%;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(108,92,231,0.28),transparent 70%);filter:blur(100px);pointer-events:none}
+.services-dark::after{content:"";position:absolute;bottom:-30%;left:-15%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,180,0.16),transparent 70%);filter:blur(100px);pointer-events:none}
+.services-dark .container{position:relative;z-index:1}
+.services-dark h2{color:white}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
+@media (max-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{border-radius:16px;padding:30px 28px;background:rgba(255,255,255,0.025);display:flex;flex-direction:column;transition:background 0.3s,box-shadow 0.3s,transform 0.3s}
+.svc-card:hover{background:rgba(108,92,231,0.08);transform:translateY(-2px);box-shadow:0 0 0 1px rgba(108,92,231,0.6),0 0 34px rgba(108,92,231,0.35)}
+.svc-num{font-family:var(--font-mono);font-size:11px;color:var(--mint);letter-spacing:0.1em;margin-bottom:16px}
+.svc-card h4{font-family:var(--font-display);font-size:clamp(22px,2vw,26px);font-weight:600;color:white;letter-spacing:-0.02em;line-height:1.12;margin-bottom:10px}
+.svc-card>p{font-size:14.5px;color:rgba(255,255,255,0.65);line-height:1.55;flex:1;margin-bottom:22px}
+.svc-proof{display:grid;grid-template-columns:1fr;gap:10px;padding:16px 18px;border-radius:12px;border:1px solid rgba(0,212,180,0.5);box-shadow:0 0 16px rgba(0,212,180,0.18),inset 0 0 18px rgba(0,212,180,0.04);background:rgba(0,0,0,0.25);position:relative;transition:border-color 0.2s,box-shadow 0.2s}
+a.svc-proof:hover{border-color:var(--mint);box-shadow:0 0 26px rgba(0,212,180,0.4)}
+.svc-proof.static{border-style:dashed;box-shadow:none}
+.svc-logo{width:auto;object-fit:contain;object-position:left;filter:brightness(0) invert(1);opacity:0.9;height:80px;max-width:100%}
+.svc-logo.keep{height:20px;max-width:120px}
+.svc-stat b{display:block;font-family:var(--font-display);font-size:28px;font-weight:600;letter-spacing:-0.025em;color:var(--mint);line-height:1;margin-bottom:6px;white-space:nowrap}
+.svc-stat span{font-size:12.5px;color:rgba(255,255,255,0.6);line-height:1.4;display:block}
+.svc-link{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:var(--mint);margin-top:2px}
+.fcs-logo{width:auto;object-fit:contain;object-position:left;filter:brightness(0) invert(1);opacity:0.9;margin-bottom:18px;height:104px;max-width:100%}
+.fcs-logo.sm{height:80px;margin-bottom:14px}
+.fcs-logo.keter{height:auto;width:auto;max-height:42px;max-width:190px}
+.fcs-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.15em;color:var(--mint);padding:10px 14px;border:1px solid rgba(0,212,180,0.5);border-radius:999px;box-shadow:0 0 14px rgba(0,212,180,0.25);transition:all 0.2s}
+.fcs-link:hover{background:var(--mint);color:var(--ink)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px;background:transparent;border:none}
+@media (max-width:800px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.team-grid{grid-template-columns:1fr}}
+.team-card{display:flex;flex-direction:row;align-items:center;gap:16px;min-height:0;padding:12px 22px 12px 12px;border-radius:999px;border:1px solid var(--rule-strong);background:white;transition:background 0.3s;position:relative}
+.team-card:hover{border-color:rgba(108,92,231,0.6);box-shadow:0 0 0 1px rgba(108,92,231,0.15),0 0 20px rgba(108,92,231,0.18)}
+.team-card.pod{border-color:rgba(108,92,231,0.7);box-shadow:0 0 0 1px rgba(108,92,231,0.14),0 0 20px rgba(108,92,231,0.26)}
+.team-card.pod:hover{box-shadow:0 0 0 1px rgba(108,92,231,0.3),0 0 30px rgba(108,92,231,0.4)}
+.cmp-4 .cmp-row{grid-template-columns:1.05fr 1fr 1fr 1fr}
+@media (max-width:900px){.cmp-4 .cmp-row{grid-template-columns:1fr}
+.cmp-4 .cmp-row>div:not(:first-child){border-left:none}
+.cmp-4 .cmp-row.head{display:none}
+.cmp-4 .cmp-row>div:nth-child(2)::before{content:"SOCIAL · ";font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--purple)}
+.cmp-4 .cmp-row>div:nth-child(3)::before{content:"CEO · ";font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--purple)}
+.cmp-4 .cmp-row>div:nth-child(4)::before{content:"LIFECYCLE · ";font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--purple)}
+}
+.cmp-own .cmp-row{grid-template-columns:1.2fr 1fr 1fr}
+@media (max-width:760px){.cmp-own .cmp-row>div:nth-child(2)::before{content:"PACKAGE.AI · ";font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--purple)}
+.cmp-own .cmp-row>div:nth-child(3)::before{content:"NOETIC · ";font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--purple)}
+}
+.cmp-row .keep::before{content:"◆";color:var(--ink);margin-right:8px;font-size:9px;vertical-align:2px}
+.cmp-row .run::before{content:"●";color:var(--purple);margin-right:8px;font-size:10px;vertical-align:2px}
+.cmp-row .both::before{content:"◐";color:var(--amber);margin-right:8px;font-size:11px}
+.svc-cadence{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.cad-pill{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.14em;padding:6px 11px;border-radius:999px;border:1px solid rgba(0,212,180,0.5);color:var(--mint);box-shadow:0 0 12px rgba(0,212,180,0.2);background:rgba(0,0,0,0.25)}
+.svc-card ul{list-style:none;margin:0 0 22px}
+.svc-card ul li{font-size:13.5px;color:rgba(255,255,255,0.7);line-height:1.5;padding:5px 0 5px 18px;position:relative}
+.svc-card ul li::before{content:"→";position:absolute;left:0;color:var(--mint);font-weight:600;font-size:12px}
+.svc-out{margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.12);font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+.svc-out b{color:var(--mint);font-weight:500}
+.road-row.onboard .road-when b{color:var(--purple)}
+.road-badge{display:inline-block;margin-top:10px;font-family:var(--font-mono);font-size:9.5px;text-transform:uppercase;letter-spacing:0.14em;padding:4px 9px;border-radius:999px;border:1px solid rgba(108,92,231,0.6);color:var(--purple-deep);box-shadow:0 0 12px rgba(108,92,231,0.22)}
+.road-what ul{list-style:none;margin-top:10px}
+.road-what ul li{font-size:14.5px;color:var(--ink-soft);line-height:1.55;padding:5px 0 5px 20px;position:relative;max-width:66ch}
+.road-what ul li::before{content:"→";position:absolute;left:0;color:var(--purple);font-weight:600;font-size:13px}
+.road-what h4{font-family:var(--font-display);font-size:21px;font-weight:600;letter-spacing:-0.02em;margin-bottom:8px}
+.pricing-single{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;margin-top:56px;align-items:start}
+@media (max-width:900px){.pricing-single{grid-template-columns:1fr}}
+.pricing-card.glow{border-radius:16px}
+.price-aside{display:flex;flex-direction:column;gap:20px}
+.price-note{border-radius:14px;padding:26px 28px;background:white;border:1px solid var(--rule-strong)}
+.price-note .l{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:0.18em;color:var(--purple-deep);margin-bottom:10px}
+.price-note p{font-size:14.5px;color:var(--ink-soft);line-height:1.6}
+.price-note p + p{margin-top:12px}
+.price-note strong{color:var(--ink);font-weight:700}
+body.anim-ready .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.8s ease,transform 0.8s ease}
+body.anim-ready .fade-in.visible{opacity:1;transform:translateY(0)}
+.pkg-logo{display:block;background-repeat:no-repeat;background-size:contain;background-position:left center;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAA4CAMAAAD+SXwCAAAAP1BMVEUVMlsYOFgCXV8YOVgYOFgDPj4AAP8A//9qAGoA/wBVVVUAAAAYOFkYN1gYOFgAAH8AAAAAAAAAAAAAAAAAAADznDDDAAAAEHRSTlMOXQOQ0AQBAQIBAwD2MawCODLqOQAABhpJREFUeNrtW41y7SgIBkzSu+tR3/9tVxMFVHJ62ubs7kzj3Jne5gfhE/ADU8D4hRF88r9lgHt8YQRPNzI3Mj9BJsnYZtHHDeM6lYtE46PPXz2TlsV5U1w3Tu23bh+XLvSZ9JI/dRb8eGFpOxH93/oMBDVgNLXd7dEr1xGdc4jAz4MSoV+FSRpMMMMuLYsLo7hunCyCJbZN/gNkUN9aosPk1RKG43qEDhjChd9wUC9i/yTUR3BeQBz8LDgW94hYxYVlUjya/vTRTHDarmMqdxkySrcyNr6LAteo9LIbOiCzVdUUpvKe651m0GC/ayMDtsvEqgioNX0HMhkGSMOkeT2evFFg65Fpv3Xa/tVeXIJhl/JboC8gk0QfVIa9BxmJAL7JxlgqZ/Np8JmwzIEjGCivtFTHr/kMS4jevxuZR8WBXOcXg30L6+7GaGovOkrG2oqJm7oo4paiobEANjIgD8I7kMEy3KMPHqUd54ZmigsAQSKcFDI6lmT8cVqFdKDVzFqwiEMVFnVuh2qQxR9QOxtdjky1oQlaDtXVpPWKp6gD4k8UlRgZWe+uQlNr28KJXaYFa1umxDLwMy60qjwVV/8GZGil4vpOPdMlR6xZpnrMmsDnf2ggw++hnShVODWzgi9JP2feyLcbMkWvNmZg1qbQaNrlPtMmwpJTw5T+2HcPb+Bo6JFBK2FWuHqWwziPS+1f9Bnq8yR+5jMYdHRifBmZJAqldstpMGpqVXxuOfKSysD4mGOJKghL5YiuM0sMwpJXMptNhs+Y0Kz1sTgkthNkejLvv4UMsT+wG33wytdF3vLvsdgCChlrw+Z5IigTGjJHlkna+vSaz/AyCMbpuc8QkBrxO9G08h0xhnT02IQrtv1qoPJVCPYmuHkLG5BZdMftlMw4jsvPoqmvCl9ChvYELCmRmnv4xMboNNQYSa71SVUHjZUsoHVIsgDV4iNtScLtKkiAzeAzOJX1nOeChyGcLkRmNzOoaie0SdkYSZnnPjPu8i0dVE2JSWDRAqLs9HpTV9M/RUa0/9C75KXI7IzKKfq+cmJY17YeQSGTPkFm3JlaPiVS4aSRCd9BpsKc+Q9pX7wUmbEQksSgCJjhM3nrSCYyvRIohQ0sI/H5LjKb8mvFxN6JDKpdtsS9EJSXo6nPqy1n7VmEU9kryKgMjP406ysli7u/C5lFkZnxzbrgTM2gEJBAoJFpfSjnn9Tne86Rvek0zzzdtWGx/H17FzKZgKbNnDTbCtFkeqjIKO+gmsCdhCyTyGwNlIETMpATXU51+cf2nP/25l2MTHbd1ok1J42QXM9vp+pgt6rv56W5O9WAQxvCV33GLIrcxbt25RGf9NyZqOVQyKzdIoYh/7fvAX/YMBfnrA9m9wHatrSuMzLJ96cqJE18MMUe+e1iPiOnKvakJVI6o8HqQojHtV6nDXOhPNHs/jz3mbp+J8FUt4drkdnmKocHU5o2lStl62J2rmRKt3eUJWXUgWM4PXIUQ4KAy4hMdGrslWYsm9HeKK0bHottFUJ65jP+uz4zVDlT669vTUgrtOt2Jp2EaZ5CWJnSfJF2p81n9m7mEX/7UoSpfJbS5gyZpf/44fFFZJLsGTQbg0ZiHs8OuPGtOKOTo0ipEEwA9rdOkMHR+IVPVUlXCFd3rnrNdblcpyjNa2e19MeTOE7CSdY2jcjjCdVBs6LskWnlaKlzB34j2+PlyFi9BskNhPPJ2XxGKf0rnLsSUhmDD6NPx3BGDsWVBCMwtvFwATLJRAbnAzO1web1lPlc8PbpbesKtYYNWkwkO02h21ET8HBOm/Pch9iy4Udm0lMWcC3l/MhnSlIngOSHawAwbpb7g+txRB/2A/8gB/6+3CX9EsnOlm/MwsplPrM/TvxDEX8QF9pn60etR9yO8n6b+iKTeLL28r/8ZZHW54KvOtZO9qWfifwH31wlytUMXfbB3y7uNXn5Sfo/I3N/p3cjcyNzI3MjcyNzI3Mjcy0yYfj6YR6/FZnPH8Ffikxa6elYdcPp9pnhES7rb2TGo075rvBGZnioNntuZKbyvUJzI3NGfG5krFzzN97InBObG5kzaH7TXyX/A5weii1Y7eXgAAAAAElFTkSuQmCC")}
+.client-bar .pkg-logo{width:100px;height:20px;filter:brightness(0) invert(1);opacity:0.92}
+.nav .pkg-logo{width:110px;height:22px}
+</style>
+</head>
+<body>
+<div class="client-bar">
+<div class="client-bar-logos">
+<img src="https://raw.githubusercontent.com/tamiral1/noetic-proposals/cab3b2d4d84b4d86697dddc3ba3354a2db7180b7/agwa-e948/assets/noetic-logo.png" alt="Noetic Creative" style="height:22px; width:auto; filter:brightness(0) invert(1); opacity:0.9;">
+<div class="client-bar-divider"></div>
+<span class="pkg-logo" role="img" aria-label="Package.AI"></span>
+</div>
+<span class="client-bar-meta">Proposal &middot; September 2026 &middot; Confidential</span>
+</div>
+
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a href="#top" class="nav-brand">
+<img src="https://raw.githubusercontent.com/tamiral1/noetic-proposals/cab3b2d4d84b4d86697dddc3ba3354a2db7180b7/agwa-e948/assets/noetic-logo.png" alt="Noetic Creative" style="height:26px; width:auto;">
+<span class="nav-brand-divider"></span>
+<span class="pkg-logo" role="img" aria-label="Package.AI"></span>
+</a>
+<ul class="nav-links">
+<li><a href="#setup">The setup</a></li>
+<li><a href="#scope">Scope</a></li>
+<li><a href="#included">What's included</a></li>
+<li><a href="#timeline">Timeline</a></li>
+<li><a href="#investment">Investment</a></li>
+<li><a href="mailto:tamir@noetic.io?subject=Package.AI%20proposal" class="nav-cta">Reply to Tamir &rarr;</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero" id="top">
+<div class="hero-grid-bg"></div>
+<div class="hero-blob"></div>
+<div class="hero-blob-2"></div>
+<div class="container hero-inner">
+<div class="hero-meta">
+<span>Proposal &middot; September 2026</span>
+<span class="hero-meta-divider"></span>
+<span>Prepared for Ziv Fass &amp; Rachel Manor</span>
+<span class="hero-meta-divider"></span>
+<span>Package.AI &times; Noetic</span>
+</div>
+<h1 class="display-xl" style="max-width:14ch">
+You taught the last mile to talk.
+<span class="accent-line">Now the brand has to.</span>
+</h1>
+<p class="hero-lede">
+Package.AI built the most conversational product in home furnishings tech. Two-way threads, self-scheduling, live rerouting, a customer who feels handled instead of notified. In the market, the company still shows up as a logo and a category label. This is a six-month program to put a voice behind it: an always-on LinkedIn presence, Ziv in the conversation every week, and a lifecycle program that keeps talking to the people your team already met.
+</p>
+
+<div class="hero-stats">
+<div class="hero-stat">
+<div class="hero-stat-num">12</div>
+<div class="hero-stat-label">LinkedIn posts published every month, company page and Ziv's account combined</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">4</div>
+<div class="hero-stat-label">Lifecycle emails written, built, and sent each month</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num"><span class="accent">$5,800</span></div>
+<div class="hero-stat-label">Per month, billed monthly, starting October 2026</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-num">6<span class="small">months</span></div>
+<div class="hero-stat-label">Commitment: build the system, then hand it off to your internal marketing team</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="setup">
+<div class="container-narrow">
+<div class="section-head">
+<span class="eyebrow">01 &mdash; The setup</span>
+<h2 class="display-md" style="margin-top:18px; max-width:24ch">
+A product built on conversation, from a company the market rarely <em class="italic" style="color:var(--purple)">hears from</em>.
+</h2>
+</div>
+
+<div class="prose">
+<p>The whole Package.AI argument is that the last mile stops being a notification and becomes a relationship. Jenny answers. Customers book and rebook their own windows. Delivery, service, and sales sit in one thread tied to the order instead of three systems tied to nothing. That is not just a feature set, it is a position: the brands that keep talking are the brands that get remembered.</p>
+
+<p>The company has not yet applied that position to itself. HFA named Package.AI its 2026 Partner of the Year. Your own site claims zero customer turnover across five years. Ziv writes for the trade press and speaks from the association's stage. <strong>All of it is real, and almost none of it reaches a buyer on an ordinary Tuesday.</strong> The evidence exists in bursts, around events and awards, then goes quiet for weeks at a time.</p>
+
+<p>Quiet is expensive in this particular market, because of where these deals actually stall. Package.AI replaces systems that furniture retailers have run for ten years. The operations lead evaluating you is not lying awake worried the product will underperform. He is worried about being the person who moved the company off something that worked. Price is rarely the objection. Technical fit is rarely the objection.</p>
+
+<div class="prose-pull">The objection is unspoken, and it sounds like: can I defend this in the room?</div>
+
+<p>That changes the shape of the work. This is not thought leadership for its own sake and it is not brand awareness for a company that already has a category. Every post, every note from Ziv, every email in this program exists to arm a champion with something forwardable: a named retailer, a real number, an award their boss has heard of, a peer who already made the switch and did not regret it.</p>
+
+<p>It also matters that DispatchTrack is running a comparison page and paid search against your name. Being named by a competitor is a form of recognition, but it means a buyer doing homework can meet someone else's framing of Package.AI before they meet yours. Consistent owned content is the cheapest correction available. When a buyer looks you up, your voice should already be in their feed and in their inbox.</p>
+
+<p><strong>One thing this proposal does not do is change who owns marketing.</strong> Rachel has just brought it in-house, which is the right call. Positioning, product truth, and final approval stay at Package.AI. What we add underneath is the production layer: a calendar that fills every week whether or not anyone has time that week, and a lifecycle program that runs on schedule instead of when someone remembers. Presence first. The ABM, webinar, and search programs Ziv and Tamir talked through sit downstream of this, and every one of them lands harder once there is a body of work to point at.</p>
+</div>
+</div>
+</section>
+
+<section class="section" style="background:var(--paper-warm)" id="heard">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">02 &mdash; What we heard</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+Six things that came out of the <em class="italic" style="color:var(--purple)">conversation</em>.
+</h2>
+</div>
+
+<ul class="belief-list">
+<li class="belief-item">
+<div class="belief-num">/01</div>
+<div class="belief-content">
+<h3>Marketing came in-house. We are the layer underneath it</h3>
+<p>Congratulations on the hire. Nothing here replaces it. Rachel sets direction and holds the pen on approvals; Noetic supplies the hours, the production, and the discipline of a calendar that does not slip when a launch week gets busy.</p>
+</div>
+</li>
+<li class="belief-item">
+<div class="belief-num">/02</div>
+<div class="belief-content">
+<h3>The deal stalls on proof, not on product</h3>
+<p>US executives hesitate to move off legacy systems because of what the decision says about them, not because of price or capability. Content that names customers, cites numbers, and shows peers who already switched is the direct answer to that hesitation.</p>
+</div>
+</li>
+<li class="belief-item">
+<div class="belief-num">/03</div>
+<div class="belief-content">
+<h3>A competitor is already framing you publicly</h3>
+<p>DispatchTrack runs a dedicated comparison page and paid search against the Package.AI name. You cannot stop that, and litigating it head-on is usually a losing move. What works is out-publishing it, so a buyer researching the category meets your evidence first and theirs second.</p>
+</div>
+</li>
+<li class="belief-item">
+<div class="belief-num">/04</div>
+<div class="belief-content">
+<h3>Campaigns yes. Automated outreach no</h3>
+<p>A clear line, and we agree with it. Nothing in this scope sends an unsolicited message to anyone. Every channel here is owned: your company page, Ziv's account, and a list of people who opted in or who your team already met.</p>
+</div>
+</li>
+<li class="belief-item">
+<div class="belief-num">/05</div>
+<div class="belief-content">
+<h3>Ziv is already a category voice, just not a weekly one</h3>
+<p>Bylined trade articles and association keynotes are the hard part, and that work is already done. What is missing is frequency. An executive who shows up once a quarter is a speaker. An executive who shows up once a week is a reference point buyers check before they call anyone.</p>
+</div>
+</li>
+<li class="belief-item">
+<div class="belief-num">/06</div>
+<div class="belief-content">
+<h3>The industry calendar is the spine</h3>
+<p>Market weeks and association events are known months ahead, and they are where your buyers concentrate. Planned properly, a three-day booth becomes eight weeks of content: the point of view going in, the capture on the floor, and the follow-through for everyone who stopped by and everyone who did not.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="section services-dark" id="scope">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow dark">03 &mdash; The scope</span>
+<h2 class="display-md" style="margin-top:18px; max-width:20ch; color:white">
+Three lines of work. <em class="italic" style="color:var(--mint)">One voice</em> behind them.
+</h2>
+<p class="lede" style="color:rgba(255,255,255,0.7); max-width:58ch; margin-top:24px">
+Narrow on purpose. Three workstreams run properly beat eight run thinly, and each of these feeds the other two: the company page builds the audience, Ziv gives it a face, and lifecycle keeps the conversation going with the people who already raised a hand.
+</p>
+</div>
+
+<div class="svc-grid">
+<div class="svc-card">
+<div class="svc-num">/ 01</div>
+<h4>Organic Social</h4>
+<div class="svc-cadence">
+<span class="cad-pill">LinkedIn only</span>
+<span class="cad-pill">2 per week</span>
+</div>
+<p>The company page becomes a weekly source of proof rather than an announcement board. LinkedIn only, because that is where furniture retail operators, VPs, and owners actually are, and because one channel done well outperforms four done occasionally.</p>
+<ul>
+<li>Four content pillars, agreed in onboarding and reviewed quarterly</li>
+<li>Customer proof, product education, category point of view, and company moments</li>
+<li>Static graphics, carousels, and short-form video from assets you already hold</li>
+<li>Copy, design, scheduling, and publishing all handled</li>
+<li>Community management: replies and comment triage on published posts</li>
+</ul>
+<div class="svc-out">Output <b>8 posts per month</b></div>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 02</div>
+<h4>Executive Thought Leadership</h4>
+<div class="svc-cadence">
+<span class="cad-pill">Ziv's account</span>
+<span class="cad-pill">1 per week</span>
+</div>
+<p>A separate voice, written differently. First person, opinionated, occasionally uncomfortable. Ziv already has the authority; this turns it into a weekly habit that buyers and the trade press can rely on finding.</p>
+<ul>
+<li>A distinct executive voice guide, built from existing writing and talks</li>
+<li>Founder point of view on the category, not company announcements</li>
+<li>Drafts delivered ahead of schedule for Ziv to edit, approve, or reject</li>
+<li>Existing bylines and keynotes repurposed into native LinkedIn posts</li>
+<li>Reply coaching: which comments are worth Ziv's time and how to answer</li>
+</ul>
+<div class="svc-out">Output <b>4 posts per month</b></div>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 03</div>
+<h4>Lifecycle Marketing</h4>
+<div class="svc-cadence">
+<span class="cad-pill">Email</span>
+<span class="cad-pill">4 per month</span>
+</div>
+<p>The channel that does the actual pipeline work. Conferences, demos, and website visits produce contacts who go cold in silence. Four sends a month keeps Package.AI in front of them with something worth opening.</p>
+<ul>
+<li>Segmentation across prospects, event contacts, stalled deals, and customers</li>
+<li>A mix of nurture, proof-led sends, and product education</li>
+<li>Copy, design, build, QA, send, and deliverability monitoring</li>
+<li>Post-event follow-up sequences timed to the industry calendar</li>
+<li>Reusable modular templates, built once and yours to keep</li>
+</ul>
+<div class="svc-out">Output <b>4 emails per month</b></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="included">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">04 &mdash; The specification</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+The whole scope on <em class="italic" style="color:var(--purple)">one screen</em>.
+</h2>
+</div>
+
+<div class="cmp cmp-4">
+<div class="cmp-row head">
+<div>
+<div class="t">Workstream</div>
+<div class="n">At a glance</div>
+<div class="p">Every month, months 2 through 6</div>
+</div>
+<div class="hl">
+<div class="t">/ 01</div>
+<div class="n">Organic Social</div>
+<div class="p">Company page</div>
+</div>
+<div class="hl">
+<div class="t">/ 02</div>
+<div class="n">Thought Leadership</div>
+<div class="p">Ziv's account</div>
+</div>
+<div class="hl">
+<div class="t">/ 03</div>
+<div class="n">Lifecycle</div>
+<div class="p">Email</div>
+</div>
+</div>
+
+<div class="cmp-row">
+<div class="lab">Channel<small>Where it publishes</small></div>
+<div>LinkedIn company page</div>
+<div>LinkedIn personal profile</div>
+<div>Your email platform</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Cadence<small>Rhythm the audience learns</small></div>
+<div>2 per week</div>
+<div>1 per week</div>
+<div>1 per week</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Monthly volume<small>Committed output</small></div>
+<div class="yes">8 posts</div>
+<div class="yes">4 posts</div>
+<div class="yes">4 emails</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Format mix<small>What gets made</small></div>
+<div>Statics, carousels, short video</div>
+<div>Text-first, occasional document post</div>
+<div>Modular HTML templates</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Voice<small>Who it sounds like</small></div>
+<div>Package.AI, the company</div>
+<div>Ziv, first person</div>
+<div>Package.AI, the company</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Written and designed by<small>Production</small></div>
+<div>Noetic</div>
+<div>Noetic, edited by Ziv</div>
+<div>Noetic</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Approved by<small>Final say</small></div>
+<div>Rachel</div>
+<div>Ziv</div>
+<div>Rachel</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Community management<small>After publishing</small></div>
+<div class="yes">Included</div>
+<div class="part">Reply coaching for Ziv</div>
+<div class="no">Not applicable</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Reporting<small>How you read it</small></div>
+<div>Monthly, in one deck</div>
+<div>Monthly, in one deck</div>
+<div>Monthly, in one deck</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" style="background:var(--paper-warm)" id="deliverables">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">05 &mdash; What's included</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+Everything in the retainer, <em class="italic" style="color:var(--purple)">itemized</em>.
+</h2>
+</div>
+
+<div class="sow-grid">
+<div class="sow-card purple">
+<div class="tag">Monthly retainer</div>
+<div class="name">Content &amp; Lifecycle Engine</div>
+<div class="tagline">Organic social, executive thought leadership, and lifecycle email, run as one program by one pod.</div>
+<div class="price">$5,800</div>
+<div class="price-meta">Per month &middot; 6-month commitment</div>
+<div class="sow-meta-row"><strong>6 months</strong><span>Term</span></div>
+<div class="sow-meta-row"><strong>Month 1</strong><span>Onboarding, nothing publishes</span></div>
+<div class="sow-meta-row"><strong>12 + 4</strong><span>Posts and emails, monthly</span></div>
+<div class="sow-meta-row"><strong>Nicole Luna</strong><span>Account lead</span></div>
+<div class="sow-meta-row"><strong>Monthly</strong><span>Review call</span></div>
+</div>
+
+<div>
+<div class="deliv-group">
+<div class="deliv-group-label">Foundation &middot; built in month one, yours to keep</div>
+
+<div class="deliv">
+<div class="deliv-num">01</div>
+<div>
+<h4>Content strategy and four pillars</h4>
+<p>A written strategy covering audience, message, and what Package.AI publishes against for the next two quarters. Four pillars, defined and defended, so no one has to invent a topic on a Tuesday morning.</p>
+<ul>
+<li>ICP and buying-committee map for home furnishings retail</li>
+<li>Competitive read, including how DispatchTrack currently frames the category</li>
+<li>Four content pillars with example posts under each</li>
+<li>Reviewed and reweighted quarterly against performance</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">02</div>
+<div>
+<h4>Two voice guides, company and founder</h4>
+<p>The company page and Ziv's account cannot sound the same, and the fastest way to make executive content read as ghostwritten is to let them. Two separate guides, built from what already exists.</p>
+<ul>
+<li>Company voice: register, vocabulary, claims we can and cannot make</li>
+<li>Founder voice, built from Ziv's published writing and recorded talks</li>
+<li>Compliance guardrails on customer names, metrics, and screenshots</li>
+<li>Both documents live in your drive, not ours</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">03</div>
+<div>
+<h4>Proof inventory</h4>
+<p>Before writing anything we catalogue what Package.AI can actually claim in public. This is the raw material the whole program runs on, and most companies have more of it than they think.</p>
+<ul>
+<li>Award and recognition assets, including HFA Partner of the Year</li>
+<li>Customer stories, quotes, and metrics cleared for public use</li>
+<li>Product moments worth showing rather than describing</li>
+<li>Gaps flagged, so Rachel knows what to go collect</li>
+</ul>
+<div class="aside">Where a claim is not yet cleared for public use, it stays out until it is. We flag it rather than soften it.</div>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">04</div>
+<div>
+<h4>Lifecycle audit and segmentation</h4>
+<p>A full read of the email side before a single send goes out: what is in the database, how it is segmented, what shape the deliverability is in, and which flows already exist.</p>
+<ul>
+<li>List health, hygiene, and deliverability check</li>
+<li>Segments defined across prospects, event contacts, stalled deals, and customers</li>
+<li>Audit of existing flows and templates, with what to keep and what to retire</li>
+<li>Written findings memo at the end of month one</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">05</div>
+<div>
+<h4>90-day editorial calendar and approval workflow</h4>
+<p>A calendar that runs to the end of December before the first post goes live, mapped against the industry event calendar, plus an agreed approval path so nothing waits on a chase.</p>
+<ul>
+<li>Every post and send slotted with topic, pillar, and format</li>
+<li>Event moments built in ahead of time, not reacted to</li>
+<li>Approval SLA agreed with Rachel and Ziv, in writing</li>
+<li>Shared Slack channel opened for day-to-day</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="deliv-group">
+<div class="deliv-group-label">Every month &middot; months two through six</div>
+
+<div class="deliv">
+<div class="deliv-num">06</div>
+<div>
+<h4>8 LinkedIn posts on the company page</h4>
+<p>Two a week, written, designed, scheduled, and published. Not eight variations of the same announcement: a planned mix across the four pillars, weighted toward proof.</p>
+<ul>
+<li>Copy, art direction, and design production included</li>
+<li>Statics, carousels, and short-form video edited from assets you hold</li>
+<li>Scheduling and publishing handled by us, on your page</li>
+<li>Comment triage and replies within one business day</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">07</div>
+<div>
+<h4>4 executive posts on Ziv's account</h4>
+<p>One a week, drafted for Ziv to edit rather than rubber-stamp. Delivered on a rolling schedule so there is always a draft waiting and never a scramble.</p>
+<ul>
+<li>Founder point of view on the category, told in first person</li>
+<li>Existing bylines and keynotes reworked into native posts</li>
+<li>A short monthly input call, or an async voice note, whichever Ziv prefers</li>
+<li>Guidance on which comments deserve a reply and roughly what to say</li>
+</ul>
+<div class="aside">Ziv keeps full control of his own account. We never post to it without explicit approval on that specific post.</div>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">08</div>
+<div>
+<h4>4 lifecycle emails, built and sent</h4>
+<p>One a week across the defined segments. Strategy, copy, design, build, QA, and send, with deliverability watched rather than assumed.</p>
+<ul>
+<li>Nurture, proof-led sends, and product education in a planned mix</li>
+<li>Modular templates built once and reused, so production speeds up over time</li>
+<li>Post-event follow-up sequences timed to the show calendar</li>
+<li>Testing on subject lines and send timing once volume allows</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">09</div>
+<div>
+<h4>Reporting and a monthly review</h4>
+<p>One deck covering all three workstreams, and a 45-minute call to read it together. Reach, engagement, follower growth, open and click rates, and what we are changing next month as a result.</p>
+<ul>
+<li>Monthly performance deck, delivered before the call</li>
+<li>45-minute review with Rachel, and Ziv whenever he wants to join</li>
+<li>Quarterly deeper read with pillar reweighting</li>
+<li>Baseline captured in month two so every later month has a comparison</li>
+</ul>
+</div>
+</div>
+
+<div class="deliv">
+<div class="deliv-num">10</div>
+<div>
+<h4>Account management and access</h4>
+<p>A named account lead, a shared channel, and a pod that already knows the account. You are not re-explaining the business to a new person every quarter.</p>
+<ul>
+<li>Nicole Luna as account director, single point of contact</li>
+<li>Shared Slack channel, 24-hour response on business days</li>
+<li>Content calendar visible to your team at all times</li>
+<li>Every asset delivered in source format and owned by Package.AI</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="not-included">
+<strong>Not in this scope</strong>
+Paid media of any kind, including LinkedIn ads and boosting &middot; Automated or manual outbound outreach &middot; ABM programs and account list building &middot; Webinar operations &middot; SEO, GEO, and AI visibility work &middot; Website or landing page development &middot; Original video production and on-site capture &middot; PR and analyst relations &middot; Channels beyond LinkedIn and email &middot; Software and platform licenses. Any of these can be scoped separately, and the ones most relevant to Package.AI are outlined further down this page.
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="ownership">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">06 &mdash; Where the line sits</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+What stays with you. What moves to <em class="italic" style="color:var(--purple)">us</em>.
+</h2>
+<p class="lede" style="margin-top:22px; max-width:58ch">
+The most useful thing an execution layer can do is be explicit about where it starts and stops. Every judgement call about Package.AI stays at Package.AI. Every hour of production moves to Noetic.
+</p>
+</div>
+
+<div class="cmp cmp-own">
+<div class="cmp-row head">
+<div>
+<div class="t">Responsibility</div>
+<div class="n">Who owns it</div>
+<div class="p">For the length of the engagement</div>
+</div>
+<div>
+<div class="t">In-house</div>
+<div class="n">Package.AI</div>
+<div class="p">Rachel and Ziv</div>
+</div>
+<div class="hl">
+<div class="t">Execution layer</div>
+<div class="n">Noetic</div>
+<div class="p">The pod on this account</div>
+</div>
+</div>
+
+<div class="cmp-row">
+<div class="lab">Positioning and product truth<small>What the company is and claims</small></div>
+<div class="keep">Owned entirely</div>
+<div class="no">We follow it</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Content strategy and pillars<small>What we publish against</small></div>
+<div class="both">Approves and steers</div>
+<div class="run">Drafts and maintains</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Editorial calendar<small>What runs when</small></div>
+<div class="both">Reviews monthly</div>
+<div class="run">Builds and keeps it full</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Writing and design<small>Making the thing</small></div>
+<div class="no">No hours required</div>
+<div class="run">All of it</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Publishing and scheduling<small>Getting it live</small></div>
+<div class="no">No hours required</div>
+<div class="run">All of it</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Ziv's voice and account<small>The founder channel</small></div>
+<div class="keep">Final word on every post</div>
+<div class="run">Drafts, schedules, coaches replies</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Approvals<small>The gate before anything ships</small></div>
+<div class="keep">Rachel on brand, Ziv on his own</div>
+<div class="no">We never publish unapproved</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Customer stories and claims<small>What can be said publicly</small></div>
+<div class="keep">Clears and supplies</div>
+<div class="run">Shapes into content</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Database, CRM, and platform<small>Systems and contracts</small></div>
+<div class="keep">Owned entirely</div>
+<div class="run">Works inside them</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Community management<small>Comments and replies</small></div>
+<div class="no">Optional involvement</div>
+<div class="run">Daily on business days</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Sales, PR, and analyst relationships<small>Human relationships</small></div>
+<div class="keep">Owned entirely</div>
+<div class="no">Out of scope</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Reporting and performance read<small>What worked and what changes</small></div>
+<div class="both">Reads and directs</div>
+<div class="run">Measures and recommends</div>
+</div>
+<div class="cmp-row">
+<div class="lab">Assets produced<small>Ownership of the output</small></div>
+<div class="keep">Yours, in source format</div>
+<div class="no">We retain nothing</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" style="background:var(--paper-cool)" id="timeline">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">07 &mdash; Timeline</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+Month one builds it. Month two <em class="italic" style="color:var(--purple)">ships it</em>.
+</h2>
+<p class="lede" style="margin-top:22px; max-width:58ch">
+We do not publish in the first month. A program that starts posting before the voice, the pillars, and the proof inventory exist produces content nobody can defend and everybody has to rewrite. October builds the system. Everything after runs on it.
+</p>
+</div>
+
+<div class="roadmap">
+<div class="road-row onboard">
+<div class="road-when">
+Month 01
+<b>October</b>
+<span class="road-badge">Onboarding &middot; nothing publishes</span>
+</div>
+<div class="road-what">
+<h4>Build the system</h4>
+<p>Four weeks of setup work with one output: a program that can run for six months without improvising. No posts, no sends, by design.</p>
+<ul>
+<li>Week 1: kickoff with Rachel and Ziv, access and platform setup, shared channel opened</li>
+<li>Week 1&ndash;2: discovery on ICP, positioning, competitive landscape, and the DispatchTrack framing</li>
+<li>Week 2: proof inventory. Awards, customer stories, metrics, and what is cleared for public use</li>
+<li>Week 2&ndash;3: lifecycle audit. List health, deliverability, segmentation, existing flows</li>
+<li>Week 3: two voice guides drafted, company and founder, from existing material</li>
+<li>Week 3: a working session with Ziv to capture how he actually talks about the category</li>
+<li>Week 4: content pillars agreed, 90-day calendar built, approval workflow signed off</li>
+</ul>
+<div class="chips">
+<span class="chip sow">Strategy document</span>
+<span class="chip sow">Two voice guides</span>
+<span class="chip sow">Proof inventory</span>
+<span class="chip sow">Lifecycle audit memo</span>
+<span class="chip sow">90-day calendar</span>
+</div>
+</div>
+</div>
+
+<div class="road-row">
+<div class="road-when">
+Month 02
+<b>November</b>
+</div>
+<div class="road-what">
+<h4>Go live on all three lines</h4>
+<p>Full cadence from week one of the month. Everything published this month comes off the calendar approved in October, so nothing is being written the night before.</p>
+<ul>
+<li>8 company posts and 4 posts from Ziv, on the agreed weekly rhythm</li>
+<li>First 4 lifecycle emails, sent against the new segments</li>
+<li>Modular email templates built and put into production</li>
+<li>Community management begins: replies and comment triage on everything published</li>
+<li>Baseline metrics captured across all three channels</li>
+<li>End of month: first performance deck and 45-minute review</li>
+</ul>
+<div class="chips">
+<span class="chip ret">8 company posts</span>
+<span class="chip ret">4 founder posts</span>
+<span class="chip ret">4 emails</span>
+<span class="chip ret">Baseline set</span>
+</div>
+</div>
+</div>
+
+<div class="road-row">
+<div class="road-when">
+Month 03
+<b>December</b>
+</div>
+<div class="road-what">
+<h4>Read the data and adjust</h4>
+<p>Same cadence, first real evidence. Two months of output is enough to see which pillars carry and which are polite noise, and December is the month to reweight before Q1.</p>
+<ul>
+<li>8 company posts, 4 founder posts, 4 emails, cadence unchanged</li>
+<li>Pillar performance reviewed and reweighted toward what is working</li>
+<li>Founder voice tuned against real engagement rather than assumption</li>
+<li>Lifecycle timing adjusted for the holiday period and year-end buying cycles</li>
+<li>Q1 calendar drafted, mapped against the winter event calendar</li>
+<li>End of month: performance deck, review call, and the first quarterly read</li>
+</ul>
+<div class="chips">
+<span class="chip ret">Same cadence</span>
+<span class="chip ret">Pillars reweighted</span>
+<span class="chip ret">Q1 calendar</span>
+</div>
+</div>
+</div>
+
+<div class="road-row">
+<div class="road-when">
+Months 04&ndash;06
+<b>Jan &ndash; Mar</b>
+</div>
+<div class="road-what">
+<h4>Compound it</h4>
+<p>Cadence holds at 12 posts and 4 emails a month. The work in these months is less about volume and more about the program getting sharper: better proof, tighter segments, and content planned around the events that matter to your buyers.</p>
+<ul>
+<li>Event-anchored content built ahead of the winter and spring market calendar</li>
+<li>Segment refinement as behavioral data accumulates in the database</li>
+<li>Second quarterly review, with a written read on what the six months produced</li>
+<li>A recommendation on what to add next, based on evidence rather than a menu</li>
+</ul>
+<div class="chips">
+<span class="chip ret">12 posts monthly</span>
+<span class="chip ret">4 emails monthly</span>
+<span class="chip ret">Quarterly review</span>
+<span class="chip ret">Phase two recommendation</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="investment">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">08 &mdash; Investment</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+One retainer. One <em class="italic" style="color:var(--purple)">number</em>.
+</h2>
+<p class="lede" style="margin-top:22px; max-width:58ch">
+No tiers, no options to weigh, no line items that appear later. Three workstreams, one pod, one monthly fee for the length of the term.
+</p>
+</div>
+
+<div class="pricing-single">
+<div class="pricing-card glow neon">
+<div class="pricing-tag">Monthly retainer</div>
+<div class="pricing-name">Content &amp; Lifecycle Engine</div>
+<div class="pricing-tagline">Organic social, executive thought leadership, and lifecycle email, run as one program.</div>
+<div class="pricing-price">$5,800 <span>/ month</span></div>
+<div class="pricing-meta">6-month commitment &middot; billed monthly &middot; starts October 2026</div>
+<ul class="pricing-features">
+<li>8 LinkedIn posts a month on the company page, written, designed, published</li>
+<li>4 posts a month on Ziv's account, drafted for his edit and approval</li>
+<li>4 lifecycle emails a month, written, designed, built, QA'd and sent</li>
+<li>Content strategy and four pillars, reviewed quarterly</li>
+<li>Two voice guides, company and founder, yours to keep</li>
+<li>Proof inventory of every claim, story and metric cleared for public use</li>
+<li>Lifecycle audit: list health, deliverability, segmentation, existing flows</li>
+<li>Rolling 90-day editorial calendar, visible to your team</li>
+<li>Modular email template system, built once and reused</li>
+<li>Community management and comment replies on business days</li>
+<li>Monthly performance deck and 45-minute review call</li>
+<li>Two quarterly reviews with pillar reweighting</li>
+<li>Named account director and a shared Slack channel</li>
+<li>Every asset delivered in source format and owned by Package.AI</li>
+</ul>
+<div class="pricing-best">
+<b>Why six months</b>
+One month builds the system and five months run it. An organic and lifecycle program shows its first honest read at month three and compounds from there, and by month six the strategy, voice guides, templates and calendar are documented and ready to hand to your internal team.
+</div>
+</div>
+
+<div class="price-aside">
+<div class="price-note">
+<div class="l">What month one buys</div>
+<p>October is billed at the standard rate and produces no published content. That is deliberate, and it is the month that decides whether the other five are any good.</p>
+<p>What it delivers instead: <strong>a content strategy with four defined pillars, two voice guides, a full proof inventory, a lifecycle audit with written findings, a 90-day editorial calendar, and an agreed approval workflow.</strong> All of it documented, all of it yours whatever happens next.</p>
+</div>
+<div class="price-note">
+<div class="l">How it is billed</div>
+<p>Monthly, in advance, for six months from October 2026. No setup fee, no onboarding fee, no per-asset charges, and no media spend flowing through us since paid is not in this scope.</p>
+<p>Platform and software licenses stay on your accounts and are billed to you directly by the vendors.</p>
+</div>
+<div class="price-note">
+<div class="l">If you need more in a given month</div>
+<p>Extra volume, a launch push, or a workstream from the next section gets scoped and quoted separately before any work starts. <strong>Nothing gets added to an invoice without a written approval from Rachel first.</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section services-dark" id="next">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow dark">09 &mdash; What comes after</span>
+<h2 class="display-md" style="margin-top:18px; max-width:24ch; color:white">
+Phase two, once there is something to <em class="italic" style="color:var(--mint)">point at</em>.
+</h2>
+<p class="lede" style="color:rgba(255,255,255,0.7); max-width:60ch; margin-top:24px">
+None of this is in the retainer above and none of it is priced here. It is the conversation Ziv and Tamir already had, written down so it does not get lost. Each of these works better after six months of content exists, because every one of them needs something to send people to.
+</p>
+</div>
+
+<div class="svc-grid">
+<div class="svc-card">
+<div class="svc-num">/ 01</div>
+<h4>ABM &amp; Named Accounts</h4>
+<p>Tiered lists of the retailers worth winning, delivered through LinkedIn and Influ2, with engagement scoring that tells your sales team which named accounts are actually warm. The content built in phase one becomes what those accounts land on.</p>
+<a class="svc-proof" href="https://noetic.io/cases/oasis/" target="_blank" rel="noopener">
+<img class="svc-logo keep" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/OAS/OAS_logo_grey.png" alt="Oasis Security">
+<div class="svc-stat"><b>+96%</b><span>Conversions, with media cost down 33% over the same period</span></div>
+<div class="svc-link">Case study &nearr;</div>
+</a>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 02</div>
+<h4>Webinar Operations</h4>
+<p>End-to-end programs: promotion, registration flows, run of show, follow-up sequences, and attribution. A natural fit for a company whose buyers gather at a handful of predictable moments each year.</p>
+<a class="svc-proof" href="https://noetic.io/case-studies/sapiens/" target="_blank" rel="noopener">
+<img class="svc-logo keep" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/SAP/SAP_logo_color.png" alt="Sapiens">
+<div class="svc-stat"><b>+50%</b><span>Improvement in deal closure from a qualified-lead webinar engine</span></div>
+<div class="svc-link">Case study &nearr;</div>
+</a>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 03</div>
+<h4>SEO &amp; AI Visibility</h4>
+<p>The direct answer to a competitor running comparison pages against your name. Search visibility for humans and for the AI engines increasingly answering on their behalf, with technical, content, and citation work under one plan.</p>
+<div class="svc-proof static">
+<div class="svc-stat"><b>Search + AI</b><span>Current benchmarks and an audit of your category available on request</span></div>
+</div>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 04</div>
+<h4>Paid Media</h4>
+<p>Paid social and paid search built for pipeline rather than impressions, with full-funnel measurement from click to closed deal. Cheaper and sharper once organic has told you which messages already land.</p>
+<a class="svc-proof" href="https://noetic.io/cases/notch/" target="_blank" rel="noopener">
+<img class="svc-logo keep" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/NCH/NCH_logo_grey.png" alt="Notch">
+<div class="svc-stat"><b>300 &rarr; 15</b><span>Accounts to tier-1 leads, via routing and a multi-signal scoring model</span></div>
+<div class="svc-link">Case study &nearr;</div>
+</a>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 05</div>
+<h4>Creative &amp; Video Production</h4>
+<p>On-site capture at market weeks and association events, customer story films, and the visual language to hold it together. The single biggest upgrade available to a content program once it is running.</p>
+<a class="svc-proof" href="https://noetic.io/cases/lumenis/" target="_blank" rel="noopener">
+<img class="svc-logo keep" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/LUM/LUM_logo_grey.png" alt="Lumenis">
+<div class="svc-stat"><b>&minus;65%</b><span>Production cost for a fully AI-produced episode, concept to feed in 5 days</span></div>
+<div class="svc-link">Case study &nearr;</div>
+</a>
+</div>
+
+<div class="svc-card">
+<div class="svc-num">/ 06</div>
+<h4>Data &amp; Attribution</h4>
+<p>GA4, tag management, conversion parity across channels, and dashboards a CEO and a board can read without a translator. The workstream that makes every other number on this page defensible.</p>
+<a class="svc-proof" href="https://noetic.io/cases/oasis/" target="_blank" rel="noopener">
+<img class="svc-logo keep" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/OAS/OAS_logo_grey.png" alt="Oasis Security">
+<div class="svc-stat"><b>One picture</b><span>Measurement rebuilt so marketing and sales read the same funnel</span></div>
+<div class="svc-link">Case study &nearr;</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section featured-section" id="work">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow dark">10 &mdash; Selected work</span>
+<h2 class="display-lg" style="margin-top:18px; color:white; max-width:20ch">
+Where the same three lines <em class="italic" style="color:var(--mint)">already ran</em>.
+</h2>
+<p class="lede" style="color:rgba(255,255,255,0.7); max-width:58ch; margin-top:24px">
+Two accounts that match this scope closely: one where LinkedIn organic carried a technical B2B brand, and one where a lifecycle program was built from nothing.
+</p>
+</div>
+
+<div class="featured-cs">
+<div class="featured-cs-grid">
+<div class="featured-cs-meta">
+<img class="fcs-logo" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/LUM/LUM_logo_grey.png" alt="Lumenis">
+<div class="featured-cs-meta-tag">Medtech &middot; Organic social &amp; LinkedIn</div>
+<h3>Lumenis</h3>
+<p>A global medical device manufacturer selling into two very different audiences, aesthetics and vision, from one brand, in a category where every claim carries regulatory weight.</p>
+<div class="featured-cs-channels">
+<span class="channel-chip">Organic social</span>
+<span class="channel-chip">LinkedIn</span>
+<span class="channel-chip">Community management</span>
+<span class="channel-chip">Event content</span>
+</div>
+<a class="fcs-link" href="https://noetic.io/cases/lumenis/" target="_blank" rel="noopener">Read the case study &nearr;</a>
+</div>
+<div class="featured-cs-narrative">
+<div>
+<h4>Challenge</h4>
+<p>Technical products, cautious compliance review, and two audiences who share nothing but a logo. The default outcome in that situation is a feed of safe, forgettable product announcements that nobody engages with.</p>
+</div>
+<div>
+<h4>Method</h4>
+<p>Doctors turned into storytellers rather than testimonials. Events converted into weeks of content instead of a single recap post. Community management run daily to hold sentiment rather than letting comment sections drift. Compliance built into the workflow at the draft stage, so approvals stopped being the bottleneck.</p>
+</div>
+<div class="featured-results-grid">
+<div class="featured-result">
+<div class="featured-result-num">25%</div>
+<div class="featured-result-label">LinkedIn engagement rate, more than 12&times; the industry benchmark</div>
+</div>
+<div class="featured-result">
+<div class="featured-result-num">&minus;96%</div>
+<div class="featured-result-label">Cost per engagement</div>
+</div>
+<div class="featured-result">
+<div class="featured-result-num purple">2&times;</div>
+<div class="featured-result-label">Event leads, at 34% lower cost per lead</div>
+</div>
+</div>
+<div class="aha-dark">A regulated B2B brand does not need louder content. It needs someone credible saying something specific, on a schedule the audience can rely on.</div>
+</div>
+</div>
+</div>
+
+<div class="featured-cs">
+<div class="featured-cs-grid">
+<div class="featured-cs-meta">
+<img class="fcs-logo keter" src="https://noetic.io/wp-content/uploads/2026/08/keter_logo.svg" alt="Keter">
+<div class="featured-cs-meta-tag">Outdoor living &middot; Lifecycle &amp; email</div>
+<h3>Keter</h3>
+<p>One of the world's largest outdoor furniture manufacturers, roughly $1.4B in revenue, with an email program that sounded like a coupon and no lifecycle automation at all.</p>
+<div class="featured-cs-channels">
+<span class="channel-chip">Lifecycle</span>
+<span class="channel-chip">Email</span>
+<span class="channel-chip">Messaging strategy</span>
+<span class="channel-chip">Template system</span>
+</div>
+<a class="fcs-link" href="https://noetic.io/cases/keter/" target="_blank" rel="noopener">Read the case study &nearr;</a>
+</div>
+<div class="featured-cs-narrative">
+<div>
+<h4>Challenge</h4>
+<p>Every send was a discount announcement on one reskinned template. The highest-intent moments, a first signup, a cart left open, a purchase completed, went entirely unanswered.</p>
+</div>
+<div>
+<h4>Method</h4>
+<p>Audited cadence and voice, wrote the brand's email register, then built five lifecycle flows from zero on a clean contact layer. Rebuilt the campaign template as a modular, mobile-first system so production got faster every month instead of slower.</p>
+</div>
+<div class="featured-results-grid">
+<div class="featured-result">
+<div class="featured-result-num">+35%</div>
+<div class="featured-result-label">Click-through rate versus previous campaigns</div>
+</div>
+<div class="featured-result">
+<div class="featured-result-num">+22%</div>
+<div class="featured-result-label">Open rate, same list</div>
+</div>
+<div class="featured-result">
+<div class="featured-result-num purple">0 &rarr; 5</div>
+<div class="featured-result-label">Lifecycle flows live, built from nothing</div>
+</div>
+</div>
+<div class="aha-dark">Every send sounded like a coupon. Nothing sounded like Keter. Once the program had a voice, the promotions did not have to carry the relationship alone.</div>
+</div>
+</div>
+</div>
+
+<div class="companion-grid">
+<div class="companion">
+<div class="tag">Travel &middot; Creator content</div>
+<img class="fcs-logo sm" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/RAIL/RAIL_logo_grey.png" alt="Rail Europe">
+<p>A vetted network of 65 creators matched to routes, with briefs written before departure and approval built into the process rather than bolted on afterward.</p>
+<div class="nums">
+<div><b>82%</b><span>Of reach from creator content</span></div>
+<div><b>+40%</b><span>Follower growth</span></div>
+</div>
+<a class="fcs-link" href="https://noetic.io/cases/rail-europe/" target="_blank" rel="noopener">Case study &nearr;</a>
+</div>
+<div class="companion">
+<div class="tag">Cybersecurity &middot; ABM</div>
+<img class="fcs-logo sm" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/OAS/OAS_logo_grey.png" alt="Oasis Security">
+<p>The company that created the non-human identity category, selling into enterprise security teams who did not yet have a word for the problem. Since agreed to be acquired at roughly a $1B valuation.</p>
+<div class="nums">
+<div><b>+96%</b><span>Conversions</span></div>
+<div><b>&minus;33%</b><span>Media cost</span></div>
+</div>
+<a class="fcs-link" href="https://noetic.io/cases/oasis/" target="_blank" rel="noopener">Case study &nearr;</a>
+</div>
+<div class="companion">
+<div class="tag">Enterprise software &middot; Webinars</div>
+<img class="fcs-logo sm" src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/SAP/SAP_logo_color.png" alt="Sapiens">
+<p>A webinar engine built as a qualified-lead machine rather than a content calendar filler, with promotion, registration, run of show, and follow-up handled end to end.</p>
+<div class="nums">
+<div><b>+50%</b><span>Improvement in deal closure</span></div>
+</div>
+<a class="fcs-link" href="https://noetic.io/case-studies/sapiens/" target="_blank" rel="noopener">Case study &nearr;</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="team">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">11 &mdash; The team</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+Thirty-six specialists. Nine on <em class="italic" style="color:var(--purple)">this account</em>.
+</h2>
+<p class="lede" style="margin-top:22px; max-width:62ch">
+The nine outlined in purple are the pod on Package.AI. Nicole runs the account and is your single point of contact, Carolina holds the strategy, Val and Paula run the channels, Ed and Serge own lifecycle, Virginia writes, Maggie designs, and Tamir stays on strategy and on Ziv. Everyone else is one message away when the scope grows.
+</p>
+</div>
+
+<div class="team-grid">
+<div class="team-card pod"><div class="team-avatar av-1"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/TAMIR/TAMIR_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Tamir Alush"></div><div class="team-info"><h5>Tamir Alush</h5><div class="role">Founder &amp; CEO</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-2"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/NICOLE/NICOLE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Nicole Luna"></div><div class="team-info"><h5>Nicole Luna</h5><div class="role">Account Director</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-3"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/CAROLINA/CAROLINA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Carolina Fallu"></div><div class="team-info"><h5>Carolina Fallu</h5><div class="role">Strategic Planner</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-4"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/VIRGINIA/VIRGINIA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Virginia Mayer"></div><div class="team-info"><h5>Virginia Mayer</h5><div class="role">Copywriter</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-5"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/VAL/VAL_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Val Parra"></div><div class="team-info"><h5>Val Parra</h5><div class="role">Social Media Manager</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-6"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/def91a6a-4f50-47e5-97a5-7474e14c2167-1781280597964.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Paula Pinzon"></div><div class="team-info"><h5>Paula Pinzon</h5><div class="role">Social Media &amp; Community Manager</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-7"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/new-1784228957021.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Ed Lopez"></div><div class="team-info"><h5>Ed Lopez</h5><div class="role">Lifecycle Marketing Specialist</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-8"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/aafb5932-4552-4680-97c3-f89e19e2dfb6-1782154171949.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Serge Alarcon"></div><div class="team-info"><h5>Serge Alarcon</h5><div class="role">Email Marketing Specialist</div></div></div>
+<div class="team-card pod"><div class="team-avatar av-9"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/MAGGIE/MAGGIE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Maggie Bernal"></div><div class="team-info"><h5>Maggie Bernal</h5><div class="role">Graphic Designer</div></div></div>
+<div class="team-card"><div class="team-avatar av-10"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/JACKIE/JACKIE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Jackie Frysz"></div><div class="team-info"><h5>Jackie Frysz</h5><div class="role">Head of Operations</div></div></div>
+<div class="team-card"><div class="team-avatar av-1"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/ANDREA/ANDREA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Andrea Martinez"></div><div class="team-info"><h5>Andrea Martinez</h5><div class="role">Account Manager</div></div></div>
+<div class="team-card"><div class="team-avatar av-2"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/VANESSA/VANESSA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Vanessa Soria"></div><div class="team-info"><h5>Vanessa Soria</h5><div class="role">Account Manager</div></div></div>
+<div class="team-card"><div class="team-avatar av-3"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/45130a96-a542-4b94-bf7e-d749406d9515-1785178123009.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Laura Gil"></div><div class="team-info"><h5>Laura Gil</h5><div class="role">Account Manager</div></div></div>
+<div class="team-card"><div class="team-avatar av-4"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/9b073f7b-2ccf-4be8-a6cd-3341033b9db9-1782160077180.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Helen Schenck"></div><div class="team-info"><h5>Helen Schenck</h5><div class="role">Creative Direction</div></div></div>
+<div class="team-card"><div class="team-avatar av-5"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/ALEX/ALEX_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Alex Heilbronn"></div><div class="team-info"><h5>Alex Heilbronn</h5><div class="role">Copywriter</div></div></div>
+<div class="team-card"><div class="team-avatar av-6"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/JOSE/JOSE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Jose Cadenas"></div><div class="team-info"><h5>Jose Cadenas</h5><div class="role">Senior Designer</div></div></div>
+<div class="team-card"><div class="team-avatar av-7"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/DANIEL/DANIEL_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Daniel Rojas"></div><div class="team-info"><h5>Daniel Rojas</h5><div class="role">Video Editor &amp; Design</div></div></div>
+<div class="team-card"><div class="team-avatar av-8"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/946e1077-9c40-4a98-b28b-3c1ef10d138c-1782159990933.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Angelica Negron"></div><div class="team-info"><h5>Angelica Negron</h5><div class="role">Graphic Designer</div></div></div>
+<div class="team-card"><div class="team-avatar av-9"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/new-1782154217415.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Sebastian Cortes"></div><div class="team-info"><h5>Sebastian Cortes</h5><div class="role">Graphic Designer</div></div></div>
+<div class="team-card"><div class="team-avatar av-10"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/DANIELA/DANIELA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Daniela Benfele"></div><div class="team-info"><h5>Daniela Benfele</h5><div class="role">Automations &amp; Email</div></div></div>
+<div class="team-card"><div class="team-avatar av-1"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/MONIQUE/MONIQUE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Monique Johnson"></div><div class="team-info"><h5>Monique Johnson</h5><div class="role">Webinar Operations</div></div></div>
+<div class="team-card"><div class="team-avatar av-2"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/JOE/JOE_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Joe Conroy"></div><div class="team-info"><h5>Joe Conroy</h5><div class="role">SEO</div></div></div>
+<div class="team-card"><div class="team-avatar av-3"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/RUI/RUI_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Rui Kojima"></div><div class="team-info"><h5>Rui Kojima</h5><div class="role">CRO</div></div></div>
+<div class="team-card"><div class="team-avatar av-4"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/GONZALO/GONZALO_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Gonzalo Mazzoni"></div><div class="team-info"><h5>Gonzalo Mazzoni</h5><div class="role">Media Buyer</div></div></div>
+<div class="team-card"><div class="team-avatar av-5"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/LUNA/LUNA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Luna Murgia"></div><div class="team-info"><h5>Luna Murgia</h5><div class="role">Media Buyer</div></div></div>
+<div class="team-card"><div class="team-avatar av-6"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/TIM/TIM_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Tim Newlin"></div><div class="team-info"><h5>Tim Newlin</h5><div class="role">Paid Search</div></div></div>
+<div class="team-card"><div class="team-avatar av-7"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/d8d89fab-70a8-4add-9091-50041f454d4c-1785178179996.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Yoav Chen"></div><div class="team-info"><h5>Yoav Chen</h5><div class="role">Paid Search Specialist</div></div></div>
+<div class="team-card"><div class="team-avatar av-8"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/KATHRYN/KATHRYN_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Kathryn Kudra"></div><div class="team-info"><h5>Kathryn Kudra</h5><div class="role">Paid Social Specialist</div></div></div>
+<div class="team-card"><div class="team-avatar av-9"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/FRANCISCO/FRANCISCO_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Francisco Sica"></div><div class="team-info"><h5>Francisco Sica</h5><div class="role">Data Analyst</div></div></div>
+<div class="team-card"><div class="team-avatar av-10"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/ESTEBAN/ESTEBAN_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Esteban Grijalva"></div><div class="team-info"><h5>Esteban Grijalva</h5><div class="role">Developer</div></div></div>
+<div class="team-card"><div class="team-avatar av-1"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/3150d37e-e41b-4017-ba12-26c03fe65c18-1784228750636.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Andres Coronel"></div><div class="team-info"><h5>Andres Coronel</h5><div class="role">Web Developer</div></div></div>
+<div class="team-card"><div class="team-avatar av-2">JA</div><div class="team-info"><h5>James Alonso</h5><div class="role">Web Designer</div></div></div>
+<div class="team-card"><div class="team-avatar av-3"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/FLOR/FLOR_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Flor Hasman"></div><div class="team-info"><h5>Flor Hasman</h5><div class="role">Talent Acquisition &amp; HR Manager</div></div></div>
+<div class="team-card"><div class="team-avatar av-4"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/new-1781288346236.jpg?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Natalie Alush"></div><div class="team-info"><h5>Natalie Alush</h5><div class="role">HR Advisor</div></div></div>
+<div class="team-card"><div class="team-avatar av-5"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/MARIA/MARIA_circle_color.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Maria Arevalo"></div><div class="team-info"><h5>Maria Arevalo</h5><div class="role">Executive Assistant / Admin Manager</div></div></div>
+<div class="team-card"><div class="team-avatar av-6"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/render/image/public/team-avatars/a3a9a05c-7423-40ef-b7ee-3ae34c514d28-1785178042854.png?width=160&amp;height=160&amp;resize=cover&amp;quality=80" alt="Ali Caiza"></div><div class="team-info"><h5>Ali Caiza</h5><div class="role">Executive Assistant &amp; Admin Coordinator</div></div></div>
+</div>
+
+<p class="team-note">Remote-first across the Americas and Europe. Working hours 9am to 6pm CT, with early calls accommodated for Israel. English and Hebrew both fluent, so write to us in either.</p>
+</div>
+</section>
+
+<section class="section clients" id="clients">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">12 &mdash; Who we work with</span>
+<h2 class="display-md" style="margin-top:18px; max-width:22ch">
+Israeli B2B tech, US midmarket, and a few that <em class="italic" style="color:var(--purple)">defy the lanes</em>.
+</h2>
+</div>
+<div class="clients-grid">
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/LUM/LUM_logo_color.png" alt="Lumenis"></div>
+<div class="client-cell keter"><img src="https://noetic.io/wp-content/uploads/2026/08/keter_logo.svg" alt="Keter"></div>
+<div class="client-cell caes"><img src="https://noetic.io/wp-content/uploads/2026/08/caesarstone_logo.svg" alt="Caesarstone"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/SAP/SAP_logo_color.png" alt="Sapiens"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/NICE/NICE_logo_color.png" alt="NICE"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/OAS/OAS_logo_color.png" alt="Oasis Security"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/RAIL/RAIL_logo_color.png" alt="Rail Europe"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/AUD/AUD_logo_color.png" alt="AudioCodes"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/WSC/WSC_logo_color.png" alt="WSC Sports"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/NCH/NCH_logo_color.png" alt="Notch"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/PRT/PRT_logo_color.png" alt="Priority Software"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/TAB/TAB_logo_color.png" alt="Tabit"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/HAZ/HAZ_logo_color.png" alt="Hazera"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/AKT/AKT_logo_color.png" alt="AKT Solutions"></div>
+<div class="client-cell"><img src="https://nrpalskhzmwucpqgqxyi.supabase.co/storage/v1/object/public/client-logos/INT/INT_logo_color.png" alt="Interlight"></div>
+</div>
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<div class="container">
+<div class="cta-eyebrow">13 &mdash; Next steps</div>
+<h2 class="cta-title">Give the brand a <span class="italic">voice.</span></h2>
+<p class="cta-lede">
+Reply to confirm and we open the shared channel the same week. Kickoff with Rachel and Ziv inside five business days, and the first foundation deliverable, the proof inventory, lands before the end of week two.
+</p>
+<div class="cta-actions">
+<a href="mailto:tamir@noetic.io?subject=Package.AI%20proposal" class="btn btn-primary">
+tamir@noetic.io
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+</a>
+<a href="https://noetic.io" target="_blank" rel="noopener" class="btn btn-ghost">
+noetic.io
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+</a>
+</div>
+
+<div class="working-model">
+<div class="wm-cell"><div class="l">01 &middot; Confirm</div><div class="v">Reply to this proposal. We countersign and open a shared Slack channel with your team.</div></div>
+<div class="wm-cell"><div class="l">02 &middot; Kickoff</div><div class="v">60 minutes with Rachel and Ziv within five business days: access, positioning, and the approval path.</div></div>
+<div class="wm-cell"><div class="l">03 &middot; Foundation</div><div class="v">Four weeks of onboarding. Proof inventory, voice guides, lifecycle audit, pillars, 90-day calendar.</div></div>
+<div class="wm-cell"><div class="l">04 &middot; Live</div><div class="v">November 1. Twelve posts and four emails a month, every month, off an approved calendar.</div></div>
+</div>
+
+<div class="footer-meta">
+<div class="footer-meta-block">Prepared for<span>Ziv Fass, Co-Founder &amp; CEO &middot; Rachel Manor, Marketing &middot; Package.AI</span></div>
+<div class="footer-meta-block">Prepared by<span>Tamir Alush, Founder &amp; CEO &middot; Noetic Creative</span></div>
+<div class="footer-meta-block">&copy; 2026 Noetic Creative<span>Confidential &middot; September 2026 &middot; noetic.io</span></div>
+</div>
+</div>
+</section>
+
+<script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 20) nav.classList.add('scrolled');
+else nav.classList.remove('scrolled');
+});
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!reduceMotion && 'IntersectionObserver' in window) {
+document.body.classList.add('anim-ready');
+const els = document.querySelectorAll('.belief-item, .svc-card, .deliv, .road-row, .cmp-row:not(.head), .featured-cs, .companion, .team-card, .pricing-card, .price-note, .client-cell');
+els.forEach(el => el.classList.add('fade-in'));
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+});
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+els.forEach(el => observer.observe(el));
+setTimeout(() => {
+document.querySelectorAll('.fade-in:not(.visible)').forEach(el => el.classList.add('visible'));
+}, 4000);
+}
+</script>
+</body>
+</html>
